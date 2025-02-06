@@ -2803,6 +2803,12 @@ nav.navbar.validnavs.inc-shape::after {
   border-radius: 29px / 147px;
 }
 
+.b1 img{
+  width: 80%;
+  height: 100%;
+  border-radius: 29px / 147px;
+}
+
 .banner-area div.swiper-slide .row div {
   height: auto;
 }
