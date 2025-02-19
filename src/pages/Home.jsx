@@ -44,6 +44,7 @@ const Home = () => {
             navigation
             loop={true}
             className="banner-fade"
+            style={{ height: "700px" }}
           >
             {slides.map((slide, index) => (
               <SwiperSlide key={index} className="banner-style-one">
@@ -73,57 +74,54 @@ const Home = () => {
         </div>
         <div
           className="about-style-one-area default-padding"
-          style={{ background: 'url("/assets/images/foooty.jpg")' }}
+          style={{ background: 'url("/assets/images/7583.jpg")' }}
         >
           <div className="container">
             <div className="row">
-              <div className="col-xl-7 col-lg-6 about-style-one">
-                <div className="row align-center">
-                  <div className="col-xl-12 col-lg-12">
-                    <div className="card">
-                      <h2 className="heading">Hariom Feeds Pvt. Ltd.</h2>
-                      <p align="justify">
-                        Hariom Feeds Pvt. Ltd., founded in 2003 by Mr. Dilip
-                        Kumar Singh in Gopalganj, Bihar, has grown into a
-                        leading producer of high-quality cattle and poultry
-                        feeds in India, producing 250 MT daily. With a strong
-                        presence in 15 states, a network of 500 dealers, and
-                        over 500 employees, the company offers a diverse range
-                        of feeds and integrated broiler farming. Equipped with
-                        modern technology and in-house R&amp;D labs, Hariom
-                        Feeds is the preferred choice for farmers and major
-                        companies. Our motto: "Grow Poultry &amp; Farmer for a
-                        Happy India."
-                        <span className="d-none d-sm-block">
-                          Today Hariom Feeds Pvt. Ltd. Group In Poultry Sector
-                          Requirement of More Than 15 States of India With A
-                          Network of 500 Dealers And More Than 500 Numbers of
-                          Employees, Hariom Feeds Pvt. Ltd. Has Developed
-                          Research &amp; Development Wing With In-House
-                          Laboratories. Our Staff And Employees Have Extensive
-                          Industry Experience And Are Committed To Maintain And
-                          Enhance The Quality And Variety of Its Animal Feed
-                          &amp; Livestock Products. Within A Short Span of Time,
-                          Hariom Feeds Pvt. Ltd. Has Become The Preferred Choice
-                          For Farmers In Broiler, Layer, Cattle Feeds, We Are
-                          The India's Leading Processing Company For Poultry
-                          &amp; Cattle Feeds Catering To The Needs of Various
-                          Big Companies
-                        </span>
-                      </p>
-                      <ul className="check-solid-list mt-20">
-                        <li>An ISO 9001:2008 Certified Company</li>
-                        <li>Use of Modern Technology</li>
-                        <li>Strict Quality Control</li>
-                        <li>Experienced Team</li>
-                      </ul>
+              <div className="col-xl-12 col-lg-12 about-style-one">
+                <div className="card">
+                  <div className="row">
+                    <div className="col-lg-8 offset-lg-2">
+                      <div className="site-heading text-center">
+                        <h5 className="sub-title" />
+                        <h2 className="title">Hariom Feeds Pvt. Ltd</h2>
+                        <div className="devider" />
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-5 col-lg-6 about-style-one pr-md-15 pr-xs-15">
-                <div className="thumb">
-                  <img src="assets/images/5.jpg" alt="Hariom Feed " />
+                  </div>{" "}
+                  <p align="justify">
+                    Hariom Feeds Pvt. Ltd., founded in 2003 by Mr. Dilip Kumar
+                    Singh in Gopalganj, Bihar, has grown into a leading producer
+                    of high-quality cattle and poultry feeds in India, producing
+                    250 MT daily. With a strong presence in 15 states, a network
+                    of 500 dealers, and over 500 employees, the company offers a
+                    diverse range of feeds and integrated broiler farming.
+                    Equipped with modern technology and in-house R&D labs,
+                    Hariom Feeds is the preferred choice for farmers and major
+                    companies. Our motto: "Grow Poultry & Farmer for a Happy
+                    India."{" "}
+                    <span className="d-none d-sm-block">
+                      Today Hariom Feeds Pvt. Ltd. Group In Poultry Sector
+                      Requirement of More Than 15 States of India With A Network
+                      of 500 Dealers And More Than 500 Numbers of Employees,
+                      Hariom Feeds Pvt. Ltd. Has Developed Research &amp;
+                      Development Wing With In-House Laboratories. Our Staff And
+                      Employees Have Extensive Industry Experience And Are
+                      Committed To Maintain And Enhance The Quality And Variety
+                      of Its Animal Feed &amp; Livestock Products. Within A
+                      Short Span of Time, Hariom Feeds Pvt. Ltd. Has Become The
+                      Preferred Choice For Farmers In Broiler, Layer, Cattle
+                      Feeds, We Are The India's Leading Processing Company For
+                      Poultry &amp; Cattle Feeds Catering To The Needs of
+                      Various Big Companies
+                    </span>
+                  </p>
+                  <ul className="check-solid-list mt-20">
+                    <li>An ISO 9001:2008 Certified Company</li>
+                    <li>Use of Modern Technology</li>
+                    <li>Strict Quality Control</li>
+                    <li>Experienced Team</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -137,9 +135,15 @@ const Home = () => {
           <div className="container">
             <div className="heading-left">
               <div className="row">
-                <div className="col-lg-5">
-                  <div className="left-info">
-                    <h2 className="title">Our Products</h2>
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-8 offset-lg-2">
+                      <div className="site-heading text-center">
+                        <h5 className="sub-title" />
+                        <h2 className="title">Our Products</h2>
+                        <div className="devider" />
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="col-lg-6 offset-lg-1">

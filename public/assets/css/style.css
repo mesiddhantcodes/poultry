@@ -2803,7 +2803,7 @@ nav.navbar.validnavs.inc-shape::after {
   border-radius: 29px / 147px;
 }
 
-.b1 img{
+.b1 img {
   width: 80%;
   height: 100%;
   border-radius: 29px / 147px;
@@ -7652,21 +7652,27 @@ footer {
   }
 }
 
+
+
 .card {
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center; /* Centers content inside the card */
+  justify-content: center; /* Centers content inside the card */
   min-width: 0;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
-  box-shadow: 0 4px 5px #877e7e7a;
   border-radius: 8px;
-  height: 100%;
+  box-shadow: 0 4px 5px #877e7e7a;
   padding: 20px;
+  width: 260%; /* Adjust width based on screen size */
+  max-width: 600px; /* Prevents it from getting too wide */
+  text-align: center; /* Aligns text content in center */
 }
+
 .services-style-one-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -7763,14 +7769,14 @@ footer {
 .features4-grid {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .features4-grid:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .feature-images {
