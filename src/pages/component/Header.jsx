@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -120,29 +121,24 @@ const Header = () => {
                   <li className="dropdown">
                     <a href="./">Home</a>
                   </li>
+
                   <li className="dropdown">
-                    <a
-                      href="/assets/pages/about.html"
-                      className="dropdown-toggle"
-                      data-toggle="dropdown"
-                    >
-                      About Us
-                    </a>
+                    <Link to="/about">About Us</Link>
                     <ul className="dropdown-menu">
                       <li>
-                        <a href="/assets/pages/about.html"> About Us</a>
+                        <Link to="/about"> About Us</Link>
                       </li>
                       <li>
-                        <a href="promoters-directors.php">Directors Desk</a>
+                        <Link to="/directors-desk">Directors Desk</Link>
                       </li>
                       <li>
-                        <a href="journey.php"> Our Journey</a>
+                        <Link to="/journey"> Our Journey</Link>
                       </li>
                       <li>
-                        <a href="vision-mission.php"> Vision &amp; Mission</a>
+                        <Link to="/vision-mission"> Vision &amp; Mission</Link>
                       </li>
                       <li>
-                        <a href="Why Choose Us.php"> Why Choose Us</a>
+                        <Link to="/why-choose-us"> Why Choose Us</Link>
                       </li>
                     </ul>
                   </li>

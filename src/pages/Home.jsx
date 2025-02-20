@@ -38,7 +38,7 @@ const Home = () => {
     ];
     return (
       <>
-        <Header />
+        {/* <Header /> */}
         <div className="banner-fade banner-area navigation-circle text-light banner-style-one zoom-effect overflow-hidden">
           <Swiper
             modules={[Navigation]}
@@ -352,7 +352,7 @@ const Home = () => {
           </div>
         </section>
 
-        <Footer />
+        {/* <Footer /> */}
       </>
     );
   };
