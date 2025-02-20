@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import Gallery from "./component/Gallery";
 // import "./styles.css"; // Import your styles
 
 const Home = () => {
@@ -155,42 +156,31 @@ const Home = () => {
             </div>
           </div>
           <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="container">
-                  <div className="row">
-                    {/* item */}
-                    <div className="col-md-4 text-center">
-                      <div className="b1">
-                        <img
-                          src="/assets/images/HARIOM BREEDER FEEDS6.jpg"
-                          alt=""
-                        />
-                        <h3>Breeder</h3>
-                      </div>
-                    </div>
-                    {/* end: */}
-                    {/* item */}
-                    <div className="col-md-4 text-center">
-                      <div className="b1">
-                        <img src="/assets/images/HARIOOM4.jpg" alt="" />
-                        <h3>Layer</h3>
-                      </div>
-                    </div>
-                    {/* end: */}
-                    {/* item */}
-                    <div className="col-md-4 text-center">
-                      <div className="b1">
-                        <img src="/assets/images/HARIOOM5.jpg" alt="" />
-                        <h3>Broiler</h3>
-                      </div>
-                    </div>
-                    {/* end: */}
-                  </div>
+            <div className="row justify-content-center">
+              {/* item */}
+              <div className="col-md-4 text-center">
+                <div className="b1">
+                  <img src="/assets/images/feeder.png" alt="Breeder" />
+                  <h3 className="sub-title ">Breeder</h3>
+                </div>
+              </div>
+              {/* item */}
+              <div className="col-md-4 text-center">
+                <div className="b1">
+                  <img src="/assets/images/layer.png" alt="Layer" />
+                  <h3 className="sub-title ">Layer</h3>
+                </div>
+              </div>
+              {/* item */}
+              <div className="col-md-4 text-center">
+                <div className="b1">
+                  <img src="/assets/images/boiler.png" alt="Broiler" />
+                  <h3 className="sub-title ">Broiler</h3>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
 
         <div className="choose-us-style-two-area half-bg-light bg-gray default-padding">
@@ -234,100 +224,12 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="gallery-style-one-area default-padding-top">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-8 offset-lg-2">
-                <div className="site-heading text-center">
-                  <h5 className="sub-title" />
-                  <h2 className="title">Gallery</h2>
-                  <div className="devider" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="container container-stage">
-            <div className="row">
-              <div className="col-xl-12">
-                <div className="carousel-stage-right carousel-style-one swiper">
-                  {/* Additional required wrapper */}
-                  <div className="swiper-wrapper">
-                    {/* Single Item */}
-                    <div className="swiper-slide">
-                      <div className="gallery-style-one">
-                        <img src="assets/images/g1.jpg" alt="Thumb" />
-                        <div className="overlay">
-                          <span>Factory</span>
-                          <h4>
-                            <a href="#">Factory Unit,Gopalganj,</a>
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                    {/* End Single Item */}
-                    {/* Single Item */}
-                    <div className="swiper-slide">
-                      <div className="gallery-style-one">
-                        <img src="assets/images/g2.jpg" alt="Thumb" />
-                        <div className="overlay">
-                          <span>Factory</span>
-                          <h4>
-                            <a href="#">Factory Unit, Gopalganj,</a>
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                    {/* End Single Item */}
-                    {/* Single Item */}
-                    <div className="swiper-slide">
-                      <div className="gallery-style-one">
-                        <img src="assets/images/g4.jpg" alt="Thumb" />
-                        <div className="overlay">
-                          <span>Factory</span>
-                          <h4>
-                            <a href="#">Factory Unit, Gopalganj,</a>
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                    {/* End Single Item */}
-                    {/* Single Item */}
-                    <div className="swiper-slide">
-                      <div className="gallery-style-one">
-                        <img src="assets/images/g4.jpg" alt="Thumb" />
-                        <div className="overlay">
-                          <span>Factory</span>
-                          <h4>
-                            <a href="#">Factory Unit, Gopalganj,</a>
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                    {/* End Single Item */}
-                    {/* Single Item */}
-                    <div className="swiper-slide">
-                      <div className="gallery-style-one">
-                        <img src="assets/images/g5.jpg" alt="Thumb" />
-                        <div className="overlay">
-                          <span>Factory</span>
-                          <h4>
-                            <a href="#">Factory Unit, Gopalganj,</a>
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                    {/* End Single Item */}
-                  </div>
-                  {/* Pagination */}
-                  <div className="swiper-pagination" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Gallery />
+
+
 
         <section
-          className="w3l-features-4 py-5"
+          className="w3l-features-4 py-5   "
           style={{ background: "linear-gradient(135deg, #ff9a8b, #ff6a88)" }}
         >
           <div className="container pb-lg-5 pb-md-4 pb-3">

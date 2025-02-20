@@ -90,6 +90,7 @@ Sidebar heading:  20px 'Manrope', sans-serif
   --dark: #d68a5e;
   --white: #ffffff;
   --color-primary: #49a760;
+  --color-text: #0a0a0a;
   --color-secondary: #f7c35f;
   --color-heading: #04000b;
   --color-paragraph: #787878;
@@ -751,11 +752,13 @@ p {
 }
 
 .sub-title {
-  text-transform: uppercase;
-  color: var(--color-primary);
-  font-weight: 800;
-  display: inline-block;
+  /* text-transform: none; */
+  color: #000000;
+  font-size: 1.8rem;
+  font-weight: bold;
+  /* display: inline-block; */
   position: relative;
+  margin-top: 10px;
   z-index: 1;
   font-family: var(--font-secondary);
 }
@@ -2796,11 +2799,11 @@ nav.navbar.validnavs.inc-shape::after {
   height: 100%;
 }
 .b1 {
-  background: #ffffff;
-  padding: 15px;
+  background: #f1ebcd;
+  padding: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.9) !important;
-  border-bottom: 4px solid #fab379;
-  border-radius: 29px / 147px;
+  border-bottom: 14px solid #fab379;
+  border-radius: 9px / 147px;
 }
 
 .b1 img {
@@ -7652,8 +7655,6 @@ footer {
   }
 }
 
-
-
 .card {
   position: relative;
   display: flex;
@@ -7668,8 +7669,8 @@ footer {
   border-radius: 8px;
   box-shadow: 0 4px 5px #877e7e7a;
   padding: 20px;
-  width: 260%; /* Adjust width based on screen size */
-  max-width: 600px; /* Prevents it from getting too wide */
+  width: 100%; /* Adjust width based on screen size */
+  /* max-width: 600px; Prevents it from getting too wide */
   text-align: center; /* Aligns text content in center */
 }
 
@@ -7788,4 +7789,41 @@ footer {
 
 .features4-grid:hover .feature-images {
   color: #3498db;
+}
+.mySwiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.gallery-style-one {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-style-one img {
+  width: 100%;
+  height: 250px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures images scale properly */
+  border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.b1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.b1:hover img {
+  transform: scale(1.1);
 }
