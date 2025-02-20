@@ -5,6 +5,10 @@ import Home from "./pages/Home";
 import Header from "./pages/component/Header";
 import About from "./pages/component/About";
 import Footer from "./pages/component/Footer";
+import Journey from "./pages/Journey";
+import Director from "./pages/Director";
+import Mission from "./pages/Mission";
+import WhyChooseUs from "./pages/WhyChooseUs";
 
 const App = () => {
   return (
@@ -13,8 +17,13 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        {/* <Route path="/products" element={<Products />} />
-        <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/journey" element={<Journey />}
+
+        />
+        <Route path="/director" element={<Director />} />
+        <Route path="/mission" element={<Mission />} />
+        <Route path="/why-choose-us" element={<WhyChooseUs />} />
+
       </Routes>
       <Footer />
     </Router>

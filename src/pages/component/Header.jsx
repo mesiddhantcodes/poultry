@@ -129,13 +129,13 @@ const Header = () => {
                         <Link to="/about"> About Us</Link>
                       </li>
                       <li>
-                        <Link to="/directors-desk">Directors Desk</Link>
+                        <Link to="/director">Directors Desk</Link>
                       </li>
                       <li>
                         <Link to="/journey"> Our Journey</Link>
                       </li>
                       <li>
-                        <Link to="/vision-mission"> Vision &amp; Mission</Link>
+                        <Link to="/mission"> Vision &amp; Mission</Link>
                       </li>
                       <li>
                         <Link to="/why-choose-us"> Why Choose Us</Link>

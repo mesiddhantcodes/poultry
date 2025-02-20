@@ -2777,6 +2777,33 @@ nav.navbar.validnavs.inc-shape::after {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
+} /* Ensure the navbar menu is horizontal */
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-nav li {
+  margin: 0 15px; /* Adjust spacing */
+}
+
+/* Hide the hamburger menu button on larger screens */
+.navbar-toggle {
+  display: none;
+}
+
+/* Show the hamburger menu button only on small screens */
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    flex-direction: column; /* Stack links vertically on small screens */
+  }
+
+  .navbar-toggle {
+    display: block; /* Show hamburger menu on small screens */
+  }
 }
 
 /* ============================================================== 
@@ -2799,7 +2826,7 @@ nav.navbar.validnavs.inc-shape::after {
   height: 100%;
 }
 .b1 {
-  background: #f1ebcd;
+  background: #fff4c4;
   padding: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.9) !important;
   border-bottom: 14px solid #fab379;
@@ -7826,4 +7853,138 @@ footer {
 
 .b1:hover img {
   transform: scale(1.1);
+}
+
+.circle {
+  padding: 13px 20px;
+  border-radius: 50%;
+  /* border width below makes connecting segments and 
+  borders unified, appearing to be part of one another */
+  border: 3px solid #afbada;
+  background-color: #213f99;
+  color: #fff;
+  /* remember that whatever "border:(x)width" property is 
+  added to the .circle, the max height below also has to
+  have this same amount added to it for it to appear
+  perfectly round :*/
+  max-height: 53px;
+  z-index: 2;
+}
+.how-it-works.row .col-2 {
+  align-self: stretch;
+}
+.how-it-works.row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 3px solid #afbada;
+  z-index: 1;
+}
+.how-it-works.row .col-2.bottom::after {
+  /* had to add 51% to the height to avoid a break 
+     in the segment and avoid a white gap in this
+     first :after rule  
+  */
+  height: 51%;
+  left: 50%;
+  top: 50%;
+}
+.how-it-works.row .col-2.full::after {
+  height: 100%;
+  left: calc(50% - 3px);
+}
+/* in order to make the left segments with the class
+   of "full" on left cols appear continuous, another    
+   :after instance had to be created as the border of the 
+   segments have a border-left of 3px. This is fine for
+   those that appear on the right cols, but they don't 
+   align on the left without the :after below.
+*/
+.how-it-works.row .col-2.fullLeft::after {
+  height: 100%;
+  left: calc(50% - 0px);
+}
+.how-it-works.row .col-2.top::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+.timeline div {
+  padding: 0;
+  height: 40px;
+}
+.timeline hr {
+  border-top: 3px solid #213f99;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+.timeline .col-2 {
+  display: flex;
+  overflow: hidden;
+}
+.timeline .corner {
+  border: 3px solid #213f99;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.timeline .top-right {
+  left: 50%;
+  top: -50%;
+}
+.timeline .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+.timeline .top-left {
+  left: -50%;
+  top: -50%;
+}
+.timeline .right-bottom {
+  left: 50%;
+  top: calc(50% - 3px);
+}
+/* type treatments */
+h5 {
+  font-family: "EB Garamond", serif;
+  font-weight: 700;
+  font-size: 1.59rem;
+  color: #213f99;
+}
+h2 {
+  font-family: "EB Garamond", serif;
+  font-weight: 700;
+  color: #c88a12;
+}
+p {
+  color: #213f99;
+}
+.circle.font-weight-bold {
+  font-family: "EB Garamond", serif;
+}
+/* makes caousel captions visible on an array of backgrounds */
+.carousel-caption p {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1), 0 0 20px #000, 0 0 20px #000;
+  font-family: "EB Garamond", serif;
+  background-color: rgba(0, 0, 0, 0.64);
+  border-radius: 3px;
+  letter-spacing: 0.13rem;
+  padding: 0.33rem;
+}
+/* /type treatments */
+/* slight rounds on carousel images */
+.carousel-inner {
+  border-radius: 0.33rem;
+}
+/* scrollMagic helper classes */
+.milestone {
+  background-color: #fff;
+  border-radius: 7px;
+  opacity: 1;
+  transition: 1s;
+}
+.milestone.fade-in {
+  background-color: rgba(200, 138, 18, 0.43);
+  opacity: 1;
 }
