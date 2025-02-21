@@ -9,6 +9,7 @@ import Journey from "./pages/Journey";
 import Director from "./pages/Director";
 import Mission from "./pages/Mission";
 import WhyChooseUs from "./pages/WhyChooseUs";
+import Poultry from "./pages/Poultry";
 
 const App = () => {
   return (
@@ -17,13 +18,12 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/journey" element={<Journey />}
-
-        />
+        <Route path="/journey" element={<Journey />} />
         <Route path="/director" element={<Director />} />
         <Route path="/mission" element={<Mission />} />
         <Route path="/why-choose-us" element={<WhyChooseUs />} />
 
+        <Route path="/poultry-division" element={<Poultry />} />
       </Routes>
       <Footer />
     </Router>

@@ -173,10 +173,10 @@ const Header = () => {
                     </a>
                     <ul className="dropdown-menu">
                       <li>
-                        <a href="Poultry.php">Poultry Division </a>
+                        <Link to="/poultry-division">Poultry Division</Link>
                       </li>
                       <li>
-                        <a href="Cattle.php"> Cattle Division </a>
+                        <Link to="https://shivgangapashuaahar.com/index.php"> Cattle Division</Link>
                       </li>
                       <li>
                         <a href="Integration.php"> Integration Division </a>
@@ -218,9 +218,9 @@ const Header = () => {
             </div>
             {/* Main Nav */}
           </div>
-        </nav>
+        </nav >
         {/* End Navigation */}
-      </header>
+      </header >
     </>
   );
 };
