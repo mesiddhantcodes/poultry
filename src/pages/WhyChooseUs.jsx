@@ -11,7 +11,7 @@ const WhyChooseUs = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8 offset-lg-2">
-                            <h1>Promoters &amp; Directors</h1>
+                            <h1>Why Choose Us</h1>
                             <nav aria-label="breadcrumb">
                                 <ol className="breadcrumb">
                                     <li>
@@ -19,7 +19,7 @@ const WhyChooseUs = () => {
                                             <i className="fas fa-home" /> Home
                                         </a>
                                     </li>
-                                    <li className="active">Promoters &amp; Directors</li>
+                                    <li className="active">Why Choose Us</li>
                                 </ol>
                             </nav>
                         </div>
@@ -33,22 +33,20 @@ const WhyChooseUs = () => {
                     <div className="row">
                         {/* Text Content */}
                         <div className="col-xl-7 col-lg-6 about-style-one pr-50">
-                            <h2 className="heading">Value</h2>
+                            <h2 className="heading">Why Choose Us </h2>
                             <p align="justify">
-                                From the day of establishment, Henraajh Feeds India Pvt. Ltd. has
-                                adopted a series of values and undertakings which are shown in its
-                                day-to-day operations, and are defined through the following
-                                aspects:
+                            From the start, Hariom Feeds Pvt. Ltd. has established a range of values and commitments
+                            that are incorporated into its daily practices, which are showcased in the following aspects:
                             </p>
                             <ul className="check-solid-list mt-20">
                                 <li>Customer focus</li>
-                                <li>Teamwork</li>
-                                <li>Commitment to achieving results</li>
                                 <li>Sustainability</li>
+                                <li>Quality </li>
                                 <li>Interest in people</li>
                                 <li>Corporate Social Responsibility</li>
-                                <li>Quality and Food Safety</li>
                                 <li>Uprightness</li>
+                                <li>Teamwork</li>
+                                <li>Commitment to achieving results</li>
                             </ul>
                         </div>
                         {/* Image Section */}

@@ -35,20 +35,18 @@ const Director = () => {
                                 </div>
                             </div>
                             <div className="col-lg-7 right-info">
-                                <h2>Mr. Jaydeep Narayan Srivastava</h2>
-                                <span>Director</span>
+                                <h2>Mr. Dilip Kumar Singh </h2>
+                                <span>Managing Director</span>
                                 <p align="justify">
-                                    Mr. Jaydeep Narayan Srivastava, S/o Late Laxmi Narayan Srivastava,
-                                    resident of Neem Ghat, Water Tank Road, Khajekalan, Patna City,
-                                    Patna (Bihar) is about 45 years old and having educational
-                                    qualification is Graduation. He has working Experience from 15 to
-                                    27 in the field of trading of poultry feed business.
+                                Welcome to Hariom Feeds Pvt.Ltd. where quality, sustainability, and innovation are at the heart of everything we do. 
+                                As a leading poultry manufacturer, we take pride in providing premium products that meet the highest standards of safety and excellence.
+                                 Our commitment to integrity, sustainability, and customer satisfaction drives us to continually improve and exceed industry standards.
                                 </p>
                                 <p align="justify">
-                                    He is also proprietor of M/s Jay Enterprises. He is actively
-                                    engaged in the trading of Ready birds &amp; Poultry Feeds and
-                                    activities regarding purchase, sale &amp; overall management of
-                                    the firms.
+                                We believe in the power of collaboration, both within our team and with our valued partners.
+                                 By harnessing the latest technologies and adhering to ethical practices, we strive to offer products that are not only nutritious but also contribute positively to the communities we serve.
+                                Thank you for your continued trust in Hariom Feeds Pvt.Ltd. We are excited about the future and look forward to serving you with the 
+                                same dedication and passion that has been the foundation of our success.
                                 </p>
                             </div>
                             <div className="col-lg-5 left-info pt-50">
@@ -57,22 +55,15 @@ const Director = () => {
                                 </div>
                             </div>
                             <div className="col-lg-7 right-info pt-50">
-                                <h2>Mrs. Jaya Srivastava</h2>
+                                <h2>Mr. Rajan Kumar Singh </h2>
                                 <span>Director</span>
                                 <p align="justify">
-                                    Mrs. Jaya Srivastava, w/o Jaydeep Narayan Srivastava, resident of
-                                    Neem Ghat, Water Tank Road, Khajekalan, Patna City, Patna (Bihar)
-                                    is about 42 years old and having educational qualification is
-                                    Graduation. She has working Experience from 15 to 25 years in the
-                                    field of trading of poultry feed business.
+                                   
                                 </p>
                                 <p align="justify">
-                                    She is also proprietor of M/s Western Poultry Farm and M/s Jay
-                                    Enterprises. She is actively engaged in the trading of Ready birds
-                                    &amp; Poultry Feeds and activities regarding purchase, sale &amp;
-                                    overall management of the firms.
+                                  
                                 </p>
-                            </div>
+                            </div>                           
                         </div>
                     </div>
                 </div>
