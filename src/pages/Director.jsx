@@ -31,7 +31,7 @@ const Director = () => {
                         <div className="row">
                             <div className="col-lg-5 left-info">
                                 <div className="thumb">
-                                    <img src="assets/images/dm1.jpg" alt="Thumb" />
+                                    <img src="public/assets/images/MDSIR.jpg" alt="Thumb" />
                                 </div>
                             </div>
                             <div className="col-lg-7 right-info">
@@ -51,7 +51,7 @@ const Director = () => {
                             </div>
                             <div className="col-lg-5 left-info pt-50">
                                 <div className="thumb">
-                                    <img src="assets/images/dm2.jpg" alt="Thumb" />
+                                    <img src="public/assets/images/" alt="Thumb" />
                                 </div>
                             </div>
                             <div className="col-lg-7 right-info pt-50">
