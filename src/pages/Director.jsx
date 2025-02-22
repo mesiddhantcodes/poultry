@@ -51,12 +51,12 @@ const Director = () => {
                             </div>
                             <div className="col-lg-5 left-info pt-50">
                                 <div className="thumb">
-                                    <img src="public/assets/images/" alt="Thumb" />
+                                    {/* <img src="public/assets/images/" alt="Thumb" /> */}
                                 </div>
                             </div>
                             <div className="col-lg-7 right-info pt-50">
-                                <h2>Mr. Rajan Kumar Singh </h2>
-                                <span>Director</span>
+                                <h2></h2>
+                                <span></span>
                                 <p align="justify">
                                    
                                 </p>

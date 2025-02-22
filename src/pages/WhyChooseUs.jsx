@@ -36,24 +36,24 @@ const WhyChooseUs = () => {
                             <h2 className="heading">Why Choose Us </h2>
                             <p align="justify">
                             From the start, Hariom Feeds Pvt. Ltd. has established a range of values and commitments
-                            that are incorporated into its daily practices, which are showcased in the following aspects:
+                            that are incorporated into its daily practices, which are showcased in the following aspects :
                             </p>
                             <ul className="check-solid-list mt-20">
-                                <li>Customer focus</li>
+                                <li>Customer Service </li>
                                 <li>Sustainability</li>
                                 <li>Quality </li>
-                                <li>Interest in people</li>
-                                <li>Corporate Social Responsibility</li>
-                                <li>Uprightness</li>
-                                <li>Teamwork</li>
-                                <li>Commitment to achieving results</li>
+                                <li>Satisfaction </li>
+                                <li>Experience </li>
+                                <li>Reliability </li>
+                                <li>Unity</li>
+                                <li>Dedication to success</li>
                             </ul>
                         </div>
                         {/* Image Section */}
                         <div className="col-xl-5 col-lg-6 about-style-one pl-50 pr-md-15 pr-xs-15">
                             <img
-                                src="assets/images/value-img.png"
-                                alt="Henraajh Feeds"
+                                src="assets/images/whychooseus.jpg"
+                                alt="Hariom Feeds"
                                 style={{
                                     boxShadow:
                                         "rgba(0, 0, 0, 0.25) 0px 54px 55px, " +

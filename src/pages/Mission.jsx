@@ -47,8 +47,8 @@ const Mission = () => {
 
                         <div className="col-xl-5 col-lg-6 about-style-one pl-50 pr-md-15 pr-xs-15">
                             <img
-                                src="assets/images/vm-img.jpg"
-                                alt="Henraajh Feeds"
+                                src="assets/images/vision.jpg"
+                                alt="Hariom Feeds."
                                 className="styled-img"
                             />
                         </div>
@@ -56,8 +56,8 @@ const Mission = () => {
                         {/* Mission Section */}
                         <div className="col-xl-5 col-lg-6 about-style-one pr-50 pr-md-15 pr-xs-15 pt-50">
                             <img
-                                src="assets/images/mission-img.jpg"
-                                alt="Henraajh Feeds"
+                                src="public/assets/images/mission.jpg"
+                                alt="Hariom Feeds"
                                 className="styled-img"
                             />
                         </div>

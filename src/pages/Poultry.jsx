@@ -11,19 +11,16 @@ const Poultry = () => {
               Farms-Overview
             </h2>
             <p className="text-gray-800 text-lg text-justify mb-3">
-              Suguna Foods is a name that resonates with your nutritional and
-              protein requirements. With a rich legacy of 35+ years, Suguna
-              continues to energize rural India by enriching more than 40,000
-              livelihoods. It envisages a march towards the vision of
-              strengthening the nation through its highest quality protein
-              sources.
+            Hariom Feeds is a trusted name in meeting your nutritional and protein needs. With over 23 years of excellence,
+            Hariom  continues to empower rural parts of Bihar, Jharkhand & Uttar Pradesh, supporting more than 50,000
+             livelihoods. Committed to its vision, the company strives to strengthen 
+             the nation by providing the highest quality protein sources.
             </p>
             <p className="text-gray-800 text-lg text-justify mb-3">
-              The company has diversified over the years to provide 360 degrees
-              of support to farmers with integrated farm solutions across India.
-              With a belief in empowering our farmers and partners through
-              encouraging productive impact in their lives as consistent protein
-              suppliers, Suguna understands to progress as a ‘protein leader’.
+            Over the years, the company has expanded to offer comprehensive support to farmers through integrated farm solutions across Bihar, Jharkhand & Uttar Pradesh. 
+            With a strong commitment to empowering farmers and partners, Hariom  fosters a meaningful impact in 
+            their lives while ensuring a steady supply of protein. Driven by this vision, Hariom continues to progress as a 
+            leader in the protein industry.
             </p>
             {/* <a
               href="#"
@@ -123,12 +120,7 @@ const Poultry = () => {
             </div>
           </div>
         </div>
-
       </div>
-
-
-
-
     </section>
   );
 };
