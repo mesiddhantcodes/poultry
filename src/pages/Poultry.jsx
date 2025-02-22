@@ -11,16 +11,16 @@ const Poultry = () => {
               Farms-Overview
             </h2>
             <p className="text-gray-800 text-lg text-justify mb-3">
-            Hariom Feeds is a trusted name in meeting your nutritional and protein needs. With over 23 years of excellence,
-            Hariom  continues to empower rural parts of Bihar, Jharkhand & Uttar Pradesh, supporting more than 50,000
-             livelihoods. Committed to its vision, the company strives to strengthen 
-             the nation by providing the highest quality protein sources.
+              Hariom Feeds is a trusted name in meeting your nutritional and protein needs. With over 23 years of excellence,
+              Hariom  continues to empower rural parts of Bihar, Jharkhand & Uttar Pradesh, supporting more than 50,000
+              livelihoods. Committed to its vision, the company strives to strengthen
+              the nation by providing the highest quality protein sources.
             </p>
             <p className="text-gray-800 text-lg text-justify mb-3">
-            Over the years, the company has expanded to offer comprehensive support to farmers through integrated farm solutions across Bihar, Jharkhand & Uttar Pradesh. 
-            With a strong commitment to empowering farmers and partners, Hariom  fosters a meaningful impact in 
-            their lives while ensuring a steady supply of protein. Driven by this vision, Hariom continues to progress as a 
-            leader in the protein industry.
+              Over the years, the company has expanded to offer comprehensive support to farmers through integrated farm solutions across Bihar, Jharkhand & Uttar Pradesh.
+              With a strong commitment to empowering farmers and partners, Hariom  fosters a meaningful impact in
+              their lives while ensuring a steady supply of protein. Driven by this vision, Hariom continues to progress as a
+              leader in the protein industry.
             </p>
             {/* <a
               href="#"
@@ -56,12 +56,12 @@ const Poultry = () => {
                     decoding="async"
                     width="100%"
                     height="auto"
-                    src="https://sugunafoods.com/wp-content/uploads/2022/04/1-1.png"
+                    src="public/assets/images/1.jpg"
                     className="lazy-image img-fluid"
                     alt="Broiler"
                   />
                   <div className="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                    <a href="https://sugunafoods.com/broiler/" className="btn btn-light">
+                    <a href="/" className="btn btn-light">
                       <span className="flaticon-right" /> Learn More
                     </a>
                   </div>
@@ -80,12 +80,12 @@ const Poultry = () => {
                     decoding="async"
                     width="100%"
                     height="auto"
-                    src="https://sugunafoods.com/wp-content/uploads/2022/04/1-1.png"
+                    src="public/assets/images/1.jpg"
                     className="lazy-image img-fluid"
                     alt="Broiler"
                   />
                   <div className="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                    <a href="https://sugunafoods.com/broiler/" className="btn btn-light">
+                    <a href="/" className="btn btn-light">
                       <span className="flaticon-right" /> Learn More
                     </a>
                   </div>
@@ -103,12 +103,12 @@ const Poultry = () => {
                     decoding="async"
                     width="100%"
                     height="auto"
-                    src="https://sugunafoods.com/wp-content/uploads/2022/04/1-1.png"
+                    src="public/assets/images/1.jpg"
                     className="lazy-image img-fluid"
                     alt="Broiler"
                   />
                   <div className="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                    <a href="https://sugunafoods.com/broiler/" className="btn btn-light">
+                    <a href="/" className="btn btn-light">
                       <span className="flaticon-right" /> Learn More
                     </a>
                   </div>

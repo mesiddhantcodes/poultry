@@ -179,7 +179,7 @@ const Header = () => {
                         <Link to="https://shivgangapashuaahar.com/index.php"> Cattle Division</Link>
                       </li>
                       <li>
-                        <a href="Integration.php"> Integration Division </a>
+                        <Link to="/integration"> Integration Division </Link>
                       </li>
                     </ul>
                   </li>

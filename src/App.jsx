@@ -10,6 +10,8 @@ import Director from "./pages/Director";
 import Mission from "./pages/Mission";
 import WhyChooseUs from "./pages/WhyChooseUs";
 import Poultry from "./pages/Poultry";
+import Integration from "./pages/Integration";
+import StateCards from "./pages/component/StateCards";
 
 const App = () => {
   return (
@@ -24,6 +26,8 @@ const App = () => {
         <Route path="/why-choose-us" element={<WhyChooseUs />} />
 
         <Route path="/poultry-division" element={<Poultry />} />
+        <Route path="/integration" element={<Integration />} />
+
       </Routes>
       <Footer />
     </Router>
