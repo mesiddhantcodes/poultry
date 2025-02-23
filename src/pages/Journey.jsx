@@ -13,10 +13,10 @@ const Journey = () => {
                     </div>
                     <div className="col-6">
                         <h5>
-                            1st january 1990-{" "}
-                            <span style={{ color: "#666" }}> The Beginning</span>
+                            {/* 1st january 1990-{" "} */}
+                            {/* <span style={{ color: "#666" }}> The Beginning</span> */}
                         </h5>
-                        <p>Poultry farming training certificate </p>
+                        {/* <p>Poultry farming training certificate </p> */}
                         {/*p>Starting with a poultry farming training certificate and an initial investment with 100 birds  of 10,000 Rs., we took the first step towards establishing our business on January 1, 1990. It's a commendable endeavor that demonstrates your determination and interest in the poultry industry.</p*/}
                     </div>
                     {/* carousel col */}
@@ -53,7 +53,7 @@ const Journey = () => {
                                         alt="Second slide"
                                     />
                                     <div className="carousel-caption d-none d-md-block">
-                                        <p>100 birds</p>
+                                        {/* <p>100 birds</p> */}
                                     </div>
                                 </div>
                                 <div className="carousel-item">
@@ -63,7 +63,7 @@ const Journey = () => {
                                         alt="Second slide"
                                     />
                                     <div className="carousel-caption d-none d-md-block">
-                                        <p>100 birds</p>
+                                        {/* <p>100 birds</p> */}
                                     </div>
                                 </div>
                             </div>
@@ -165,14 +165,14 @@ const Journey = () => {
                     {/* /carousel col */}
                     <div className="col-6 text-right">
                         <h5>
-                            1990-2000 <span style={{ color: "#666" }}>Growing Business </span>
+                            {/* 1990-2000 <span style={{ color: "#666" }}>Growing Business </span> */}
                         </h5>
-                        <p>
+                        {/* <p>
                             Starting a poultry feed and chicks business and becoming a no.1 trader
                             in Bihar from 1990 to 2013 shows dedication and success in the
                             industry. Farm was established in the year 2000 with 20,000 birds in
                             Balwakuari.
-                        </p>
+                        </p> */}
                     </div>
                     <div className="col-2 text-center full d-inline-flex justify-content-center align-items-center">
                         <div className="circle font-weight-bold">2</div>
@@ -198,14 +198,14 @@ const Journey = () => {
                     </div>
                     <div className="col-6">
                         <h5>
-                            2012 - <span style={{ color: "#666" }}>Bird Farming </span>
+                            {/* 2012 - <span style={{ color: "#666" }}>Bird Farming </span> */}
                         </h5>
-                        <p>
+                        {/* <p>
                             In 2012, a climate control shed was established in Didarganj, Patna.
                             Climate control sheds are designed to regulate temperature, humidity,
                             and other environmental factors to create optimal conditions for the
                             well-being and productivity of poultry.
-                        </p>
+                        </p> */}
                     </div>
                 </div>
                 {/*path between 3-4*/}
@@ -225,15 +225,15 @@ const Journey = () => {
                 <div className="row align-items-center justify-content-end how-it-works d-flex milestone">
                     <div className="col-6 text-right">
                         <h5>
-                            2013 - <span style={{ color: "#666" }}>Manufacturing Unit</span>
+                            {/* 2013 - <span style={{ color: "#666" }}>Manufacturing Unit</span> */}
                         </h5>
-                        <p>
+                        {/* <p>
                             In 2013, M/s Henraajh Feeds India Pvt. Ltd. proposed to establish a
                             poultry feed unit at Plot No. S-1, S-2, S-3, S-9, S-10 &amp; S-11,
                             Industrial Area, Fatuha, Patna (Bihar). The company acquired the
                             mentioned area on a leasehold basis from BIADA (Bihar Industrial Area
                             Development Authority).
-                        </p>
+                        </p> */}
                     </div>
                     <div className="col-3 text-center d-inline-flex justify-content-center align-items-center">
                         {/* carousel elements */}
@@ -258,7 +258,7 @@ const Journey = () => {
                                         alt="First slide"
                                     />
                                     <div className="carousel-caption d-none d-md-block">
-                                        <p>2013</p>
+                                        {/* <p>2013</p> */}
                                     </div>
                                 </div>
                                 <div className="carousel-item">
@@ -268,7 +268,7 @@ const Journey = () => {
                                         alt="Second slide"
                                     />
                                     <div className="carousel-caption d-none d-md-block">
-                                        <p>2013</p>
+                                        {/* <p>2013</p> */}
                                     </div>
                                 </div>
                                 <div className="carousel-item">
@@ -278,7 +278,7 @@ const Journey = () => {
                                         alt="Second slide"
                                     />
                                     <div className="carousel-caption d-none d-md-block">
-                                        <p>2013</p>
+                                        {/* <p>2013</p> */}
                                     </div>
                                 </div>
                                 <div className="carousel-item">
@@ -288,7 +288,7 @@ const Journey = () => {
                                         alt="Second slide"
                                     />
                                     <div className="carousel-caption d-none d-md-block">
-                                        <p>2013</p>
+                                        {/* <p>2013</p> */}
                                     </div>
                                 </div>
                                 <div className="carousel-item">
@@ -298,7 +298,7 @@ const Journey = () => {
                                         alt="Second slide"
                                     />
                                     <div className="carousel-caption d-none d-md-block">
-                                        <p>2013</p>
+                                        {/* <p>2013</p> */}
                                     </div>
                                 </div>
                             </div>
@@ -419,7 +419,7 @@ const Journey = () => {
                                         alt="Second slide"
                                     />
                                     <div className="carousel-caption d-none d-md-block">
-                                        <p>2016</p>
+                                        {/* <p>2016</p> */}
                                     </div>
                                 </div>
                             </div>
@@ -449,11 +449,11 @@ const Journey = () => {
                             Year 2016 -{" "}
                             <span style={{ color: "#666" }}>Manufacturing Unit Start</span>
                         </h5>
-                        <p>
+                        {/* <p>
                             On May 23, 2016, Production of Poultry Feed Brand "King Star Super
                             Premium" and "Gold King Premium Quality" started in the Industrial
                             Area of Fatuha, Patna.
-                        </p>
+                        </p> */}
                     </div>
                 </div>
                 {/* /section 5 */}
@@ -477,11 +477,11 @@ const Journey = () => {
                             Year 2018 -{" "}
                             <span style={{ color: "#666" }}>Climate Control Shed</span>
                         </h5>
-                        <p>
+                        {/* <p>
                             In the year 2018, our business continued to experience growth with the
                             establishment of a new poultry farm in Karataha, Lalaganj, Hajipur,
                             with a capacity to house 130,000 birds.
-                        </p>
+                        </p> */}
                     </div>
                     <div className="col-2 text-center full d-inline-flex justify-content-center align-items-center">
                         <div className="circle font-weight-bold">6</div>
@@ -510,10 +510,10 @@ const Journey = () => {
                         <h5>
                             Year 2023 - <span style={{ color: "#666" }}>Present Turnover</span>
                         </h5>
-                        <p>
+                        {/* <p>
                             Company, along with its Proprietorship Firm, has achieved a turnover
                             of 150 crore to 200 crore.
-                        </p>
+                        </p> */}
                     </div>
                 </div>
                 {/* /section 7 */}
@@ -534,12 +534,12 @@ const Journey = () => {
                         <h5>
                             Future Plan - <span style={{ color: "#666" }}>Growing Business</span>
                         </h5>
-                        <p>
+                        {/* <p>
                             Expanding into a breeding hatchery and establishing a frozen chicken
                             unit are exciting future plans for our company. These initiatives can
                             provide opportunities for growth, diversification, and potentially
                             increased revenue.{" "}
-                        </p>
+                        </p> */}
                     </div>
                     <div className="col-2 text-center full d-inline-flex justify-content-center align-items-center">
                         <div className="circle font-weight-bold">8</div>

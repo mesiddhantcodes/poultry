@@ -85,8 +85,8 @@ const Home = () => {
                     <div className="col-lg-8 offset-lg-2">
                       <div className="site-heading text-center">
                         <h5 className="sub-title" />
-                        <h2 className="title">Hariom Feeds Pvt. Ltd</h2>
-                        <div className="devider" />
+                        <h2 className="title">Hariom Feeds Private Limited </h2>
+                        <div className="" />
                       </div>
                     </div>
                   </div>{" "}
@@ -118,7 +118,7 @@ const Home = () => {
                     </span>
                   </p>
                   <ul className="check-solid-list mt-20">
-                    <li>An ISO 9001:2008 Certified Company</li>
+                    <li>An ISO 9001:2015Certified Company</li>
                     <li>Use of Modern Technology</li>
                     <li>Strict Quality Control</li>
                     <li>Experienced Team</li>

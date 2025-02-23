@@ -52,7 +52,7 @@ const WhyChooseUs = () => {
                         {/* Image Section */}
                         <div className="col-xl-5 col-lg-6 about-style-one pl-50 pr-md-15 pr-xs-15">
                             <img
-                                src="assets/images/whychooseus.jpg"
+                                src="assets/images/why.jpeg"
                                 alt="Hariom Feeds"
                                 style={{
                                     boxShadow:

@@ -12,6 +12,12 @@ const StateCards = () => {
             location: "Patna, Bihar",
             contact: "+91 12345 67890",
             description: "Bihar is known for its growing agriculture and poultry industry.",
+
+            name: "Bihar",
+            image: "public/assets/images/Bihar.png",
+            location: "Patna, Bihar",
+            contact: "+91 12345 67890",
+            description: "Bihar is known for its growing agriculture and poultry industry.",
         },
         "Uttar Pradesh": {
             name: "Uttar Pradesh",

@@ -37,7 +37,7 @@ const Gallery = () => {
                                 <div className="overlay">
                                     <span>Factory</span>
                                     <h4>
-                                        <a href="#">Industrial Area, Fatuha</a>
+                                        <a href="#">Manjhagarh, Gopalganj</a>
                                     </h4>
                                 </div>
                             </div>
