@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
@@ -11,7 +10,12 @@ import Mission from "./pages/Mission";
 import WhyChooseUs from "./pages/WhyChooseUs";
 import Poultry from "./pages/Poultry";
 import Integration from "./pages/Integration";
-import StateCards from "./pages/component/StateCards";
+import IntegrationBihar from "./pages/IntegrationBihar";
+import IntegrationJharkhand from "./pages/IntegrationJharkhand";
+import IntegrationUp from "./pages/IntegrationUp";
+import Broiler from "./pages/Broiler";
+import Layer from "./pages/Layer";
+import Feeder from "./pages/Feeder";
 
 const App = () => {
   return (
@@ -27,6 +31,14 @@ const App = () => {
 
         <Route path="/poultry-division" element={<Poultry />} />
         <Route path="/integration" element={<Integration />} />
+        <Route path="/integration/bihar" element={<IntegrationBihar />} />
+
+        <Route path="/integration/jharkhand" element={<IntegrationJharkhand />} />
+        <Route path="/integration/uttar-pradesh" element={<IntegrationUp />} />
+        <Route path="/poultry-division/broiler" element={<Broiler />} />
+        <Route path="/poultry-division/layer" element={<Layer />} />
+        <Route path="/poultry-division/feeder" element={<Feeder />} />
+
 
       </Routes>
       <Footer />

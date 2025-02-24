@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import StateCards from "./component/StateCards";
 
 // StateCards
@@ -52,7 +53,10 @@ const Integration = () => {
                 {/* Replace Static Cards with StateCards Component */}
                 <StateCards />
             </div>
+            <Outlet />
+
         </section>
+
     );
 };
 

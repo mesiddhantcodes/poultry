@@ -1,4 +1,3 @@
-import React from 'react';
 
 const Director = () => {
     return (
@@ -38,15 +37,15 @@ const Director = () => {
                                 <h2>Mr. Dilip Kumar Singh </h2>
                                 <span>Managing Director</span>
                                 <p align="justify">
-                                Welcome to Hariom Feeds Pvt.Ltd. where quality, sustainability, and innovation are at the heart of everything we do. 
-                                As a leading poultry manufacturer, we take pride in providing premium products that meet the highest standards of safety and excellence.
-                                 Our commitment to integrity, sustainability, and customer satisfaction drives us to continually improve and exceed industry standards.
+                                    Welcome to Hariom Feeds Pvt.Ltd. where quality, sustainability, and innovation are at the heart of everything we do.
+                                    As a leading poultry manufacturer, we take pride in providing premium products that meet the highest standards of safety and excellence.
+                                    Our commitment to integrity, sustainability, and customer satisfaction drives us to continually improve and exceed industry standards.
                                 </p>
                                 <p align="justify">
-                                We believe in the power of collaboration, both within our team and with our valued partners.
-                                 By harnessing the latest technologies and adhering to ethical practices, we strive to offer products that are not only nutritious but also contribute positively to the communities we serve.
-                                Thank you for your continued trust in Hariom Feeds Pvt.Ltd. We are excited about the future and look forward to serving you with the 
-                                same dedication and passion that has been the foundation of our success.
+                                    We believe in the power of collaboration, both within our team and with our valued partners.
+                                    By harnessing the latest technologies and adhering to ethical practices, we strive to offer products that are not only nutritious but also contribute positively to the communities we serve.
+                                    Thank you for your continued trust in Hariom Feeds Pvt.Ltd. We are excited about the future and look forward to serving you with the
+                                    same dedication and passion that has been the foundation of our success.
                                 </p>
                             </div>
                             <div className="col-lg-5 left-info pt-50">
@@ -58,12 +57,12 @@ const Director = () => {
                                 <h2></h2>
                                 <span></span>
                                 <p align="justify">
-                                   
+
                                 </p>
                                 <p align="justify">
-                                  
+
                                 </p>
-                            </div>                           
+                            </div>
                         </div>
                     </div>
                 </div>

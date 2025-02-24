@@ -1,4 +1,5 @@
-import React from "react";
+import ServicesSection from "./ServicesSection";
+import { Outlet } from "react-router-dom";
 
 const Poultry = () => {
   return (
@@ -46,9 +47,8 @@ const Poultry = () => {
           </div>
         </div>
 
-        <div className="container">
+        {/* <div className="container">
           <div className="row justify-content-center">
-            {/* Broiler Card 1 */}
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 service-block-six">
               <div className="inner-box shadow-lg rounded-lg overflow-hidden">
                 <div className="image-box position-relative">
@@ -72,7 +72,6 @@ const Poultry = () => {
               </div>
             </div>
 
-            {/* Broiler Card 2 */}
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 service-block-six">
               <div className="inner-box shadow-lg rounded-lg overflow-hidden">
                 <div className="image-box position-relative">
@@ -95,7 +94,6 @@ const Poultry = () => {
                 </div>
               </div>
             </div>
-            {/* Broiler Card 3 */}
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 service-block-six">
               <div className="inner-box shadow-lg rounded-lg overflow-hidden">
                 <div className="image-box position-relative">
@@ -119,8 +117,10 @@ const Poultry = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+        <ServicesSection />
       </div>
+      <Outlet />
     </section>
   );
 };
