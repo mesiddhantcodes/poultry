@@ -2,12 +2,10 @@ import ContactCard from './component/ContactCard';
 
 const IntegrationJharkhand = () => {
     const contactData = [
-        { title: "Integration Bihar", address: "Bihar", phone: "+98765456789", email: "sdsdfsdfasdfasd" },
-        { title: "Integration Bihar", address: "Bihar", phone: "+98765456789", email: "sdsdfsdfasdfasd" },
-        { title: "Integration Bihar", address: "Bihar", phone: "+98765456789", email: "sdsdfsdfasdfasd" },
-        { title: "Integration Bihar", address: "Bihar", phone: "+98765456789", email: "sdsdfsdfasdfasd" },
-        { title: "Integration Bihar", address: "Bihar", phone: "+98765456789", email: "sdsdfsdfasdfasd" },
-        { title: "Integration Bihar", address: "Bihar", phone: "+98765456789", email: "sdsdfsdfasdfasd" },
+        { title: "BOKARO", address: "Jaina More, Bokaro-829301", phone: "+91-7781002152", email: "int.bkr@hariomfeeds.co.in" },
+        { title: "RAMGARH", address: "KOTHAR,Ramgarh-829122", phone: "+91-9264290426", email: "int.rmg@hariomfeeds.co.in" },
+        { title: "BARHI", address: "", phone: "+91-7781002157", email: "int.bar@hariomfeeds.co.in" },
+
     ];
 
     return (

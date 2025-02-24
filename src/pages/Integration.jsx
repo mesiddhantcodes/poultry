@@ -13,21 +13,12 @@ const Integration = () => {
                             Integration Division
                         </h2>
                         <p className="text-gray-800 text-lg text-justify mb-3">
-                            Hariom Feeds is a trusted name in meeting your nutritional and
-                            protein needs. With over 23 years of excellence, Hariom continues
-                            to empower rural parts of Bihar, Jharkhand & Uttar Pradesh,
-                            supporting more than 50,000 livelihoods. Committed to its vision,
-                            the company strives to strengthen the nation by providing the
-                            highest quality protein sources.
+                        This Division plays a crucial role in supporting the poultry industry by catering to the needs of 7,000 poultry farmers, ranging from small-scale backyard poultry keepers to large commercial enterprises. These farmers
+                         are spread across the entire state of Bihar and its neighboring regions, making efficient service delivery a significant responsibility.
                         </p>
                         <p className="text-gray-800 text-lg text-justify mb-3">
-                            Over the years, the company has expanded to offer comprehensive
-                            support to farmers through integrated farm solutions across Bihar,
-                            Jharkhand & Uttar Pradesh. With a strong commitment to empowering
-                            farmers and partners, Hariom fosters a meaningful impact in their
-                            lives while ensuring a steady supply of protein. Driven by this
-                            vision, Hariom continues to progress as a leader in the protein
-                            industry.
+                        The Division ensures timely supply of essential inputs, including high-quality feed, vaccines, and technical expertise, helping farmers maintain healthy 
+                        and productive poultry operations. In addition, it provides technical guidance and advisory services, equipping farmers with modern rearing techniques, disease prevention strategies, and best management practices to enhance productivity.
                         </p>
                     </div>
 

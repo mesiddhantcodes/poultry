@@ -2,12 +2,9 @@ import ContactCard from './component/ContactCard';
 
 const IntegrationUp = () => {
     const contactData = [
-        { title: "Integration Bihar", address: "Bihar", phone: "+98765456789", email: "sdsdfsdfasdfasd" },
-        { title: "Integration Bihar", address: "Bihar", phone: "+98765456789", email: "sdsdfsdfasdfasd" },
-        { title: "Integration Bihar", address: "Bihar", phone: "+98765456789", email: "sdsdfsdfasdfasd" },
-        { title: "Integration Bihar", address: "Bihar", phone: "+98765456789", email: "sdsdfsdfasdfasd" },
-        { title: "Integration Bihar", address: "Bihar", phone: "+98765456789", email: "sdsdfsdfasdfasd" },
-        { title: "Integration Bihar", address: "Bihar", phone: "+98765456789", email: "sdsdfsdfasdfasd" },
+        { title: "KASIA", address: "Kudwa Urf Dilip Nagar Tola Bakuladah,Kushinagar-274402", phone: "+91-9119900955", email: "int.kas@hariomfeeds.co.in" },
+        { title: "MAU", address: "Ram Nagar Colony,ChandraBhanpur,Mau-275101", phone: "+91-7781021433", email: "int.mau@hariomfeeds.co.in" },
+        
     ];
 
     return (
