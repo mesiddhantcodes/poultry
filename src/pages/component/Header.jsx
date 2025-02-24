@@ -123,7 +123,8 @@ const Header = () => {
                   </li>
 
                   <li className="dropdown">
-                    <Link to="/about">About Us</Link>
+                    <Link to="/about" className="dropdown-toggle"
+                      data-toggle="dropdown">About Us</Link>
                     <ul className="dropdown-menu">
                       <li>
                         <Link to="/about"> About Us</Link>
