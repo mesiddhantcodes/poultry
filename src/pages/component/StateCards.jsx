@@ -7,6 +7,7 @@ const StateCards = () => {
         { title: "Uttar Pradesh", image: "/public/assets/images/UPP.png", link: "/integration/uttar-pradesh" },
     ];
 
+<<<<<<< HEAD
     const cardStyle = {
         cursor: "pointer",
         transition: "transform 0.3s ease, box-shadow 0.3s ease",
@@ -36,6 +37,37 @@ const StateCards = () => {
         opacity: 0,
         transition: "opacity 0.3s ease",
         zIndex: 2,
+=======
+    // Sample data for states
+    const stateDetails = {
+        Bihar: {
+            name: "Bihar",
+            image: "public/assets/images/Bihar.png",
+            location: "Patna, Bihar",
+            contact: "+91 12345 67890",
+            description: "Bihar is known for its growing agriculture and poultry industry.",
+
+            name: "Bihar",
+            image: "public/assets/images/Bihar.png",
+            location: "Patna, Bihar",
+            contact: "+91 12345 67890",
+            description: "Bihar is known for its growing agriculture and poultry industry.",
+        },
+        "Uttar Pradesh": {
+            name: "Uttar Pradesh",
+            image: "public/assets/images/UPP.png",
+            location: "Lucknow, Uttar Pradesh",
+            contact: "+91 98765 43210",
+            description: "Uttar Pradesh is a major hub for poultry, dairy, and sugar industries.",
+        },
+        Jharkhand: {
+            name: "Jharkhand",
+            image: "public/assets/images/jha.png",
+            location: "Ranchi, Jharkhand",
+            contact: "+91 11223 44556",
+            description: "Jharkhand has a rapidly growing poultry and agriculture sector.",
+        },
+>>>>>>> 6df14d2072b377bb98238500664fed1e9015efb0
     };
 
     return (

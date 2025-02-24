@@ -11,13 +11,13 @@ const Poultry = () => {
             <h2 className="text-2xl font-semibold text-[#0c2957] mb-3">
               Farms-Overview
             </h2>
-            <p className="text-gray-800 text-lg text-justify mb-3">
+            <p className="text-gray-800 text-lg text-justify mb-3" align ="justify">
               Hariom Feeds is a trusted name in meeting your nutritional and protein needs. With over 23 years of excellence,
               Hariom  continues to empower rural parts of Bihar, Jharkhand & Uttar Pradesh, supporting more than 50,000
               livelihoods. Committed to its vision, the company strives to strengthen
               the nation by providing the highest quality protein sources.
             </p>
-            <p className="text-gray-800 text-lg text-justify mb-3">
+            <p className="text-gray-800 text-lg text-justify mb-3" align = "justify">
               Over the years, the company has expanded to offer comprehensive support to farmers through integrated farm solutions across Bihar, Jharkhand & Uttar Pradesh.
               With a strong commitment to empowering farmers and partners, Hariom  fosters a meaningful impact in
               their lives while ensuring a steady supply of protein. Driven by this vision, Hariom continues to progress as a
@@ -56,7 +56,7 @@ const Poultry = () => {
                     decoding="async"
                     width="100%"
                     height="auto"
-                    src="public/assets/images/1.jpg"
+                    src="public/assets/images/broiler.jpg"
                     className="lazy-image img-fluid"
                     alt="Broiler"
                   />
@@ -79,7 +79,7 @@ const Poultry = () => {
                     decoding="async"
                     width="100%"
                     height="auto"
-                    src="public/assets/images/1.jpg"
+                    src="public/assets/images/layer.jpeg"
                     className="lazy-image img-fluid"
                     alt="Broiler"
                   />
@@ -90,7 +90,7 @@ const Poultry = () => {
                   </div>
                 </div>
                 <div className="content p-3 text-center">
-                  <h5 className="fw-bold">Broiler</h5>
+                  <h5 className="fw-bold">Layer </h5>
                 </div>
               </div>
             </div>
@@ -112,7 +112,7 @@ const Poultry = () => {
                   </div>
                 </div>
                 <div className="content p-3 text-center">
-                  <h5 className="fw-bold">Broiler</h5>
+                  <h5 className="fw-bold">Breeder </h5>
                 </div>
               </div>
             </div>

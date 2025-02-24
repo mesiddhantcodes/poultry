@@ -14,9 +14,9 @@ const Footer = () => {
                   src="/assets/images/logo.png"
                   alt="Hariom Feeds India Pvt. Ltd."
                 />
-                <p>
-                  Hariom Feeds Pvt. Ltd. is a feed manufacturing company
-                  producing compounded poultry feed, catering to the animal
+                <p align ="">
+                  Hariom Feeds Pvt.Ltd. is a feed manufacturing company
+                   producing compounded poultry feed, catering to the animal
                   health and nutrition industry
                 </p>
               </div>
@@ -31,13 +31,13 @@ const Footer = () => {
                     <a href="./">Home</a>
                   </li>
                   <li>
-                    <a href="about.php">About Us</a>
+                    <a href="./About.jsx">About Us</a>
                   </li>
                   <li>
-                    <a href="vision-mission.php">Vision &amp; Mission</a>
+                    <a href=""> Vision &amp; Mission</a>
                   </li>
                   <li>
-                    <a href="contact.php">Contact Us</a>
+                    <a href="">Contact Us</a>
                   </li>
                 </ul>
               </div>
@@ -71,7 +71,7 @@ const Footer = () => {
                       <i className="fas fa-home" />
                     </div>
                     <div className="content">
-                      <strong>Corporate office:</strong>
+                      <strong>Corporate office :</strong>
                       405, Shashi Complex, Exibition Road, Patna-800001 (BIHAR)
                     </div>
                   </li>
@@ -80,7 +80,7 @@ const Footer = () => {
                       <i className="fas fa-envelope" />
                     </div>
                     <div className="content">
-                      <strong>Email:</strong>
+                      <strong>Email :</strong>
                       <a href="mailto:contact@hariomfeeds.co.in">
                         contact@hariomfeeds.co.in
                       </a>
@@ -91,8 +91,8 @@ const Footer = () => {
                       <i className="fas fa-phone" />
                     </div>
                     <div className="content">
-                      <strong>Phone:</strong>
-                      <a href="tel:+91 9264496800">+91 7544000912</a>,
+                      <strong>Phone :</strong>
+                      <a href="tel:+91 9264496800">+91-7544000912</a>,
                       <a href="tel:+91 7544000903">7544000903</a>
                     </div>
                   </li>
