@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
 const StateCards = () => {
@@ -7,7 +8,6 @@ const StateCards = () => {
         { title: "Uttar Pradesh", image: "/public/assets/images/UPP.png", link: "/integration/uttar-pradesh" },
     ];
 
-<<<<<<< HEAD
     const cardStyle = {
         cursor: "pointer",
         transition: "transform 0.3s ease, box-shadow 0.3s ease",
@@ -37,48 +37,13 @@ const StateCards = () => {
         opacity: 0,
         transition: "opacity 0.3s ease",
         zIndex: 2,
-=======
-    // Sample data for states
-    const stateDetails = {
-        Bihar: {
-            name: "Bihar",
-            image: "public/assets/images/Bihar.png",
-            location: "Patna, Bihar",
-            contact: "+91 12345 67890",
-            description: "Bihar is known for its growing agriculture and poultry industry.",
-
-            name: "Bihar",
-            image: "public/assets/images/Bihar.png",
-            location: "Patna, Bihar",
-            contact: "+91 12345 67890",
-            description: "Bihar is known for its growing agriculture and poultry industry.",
-        },
-        "Uttar Pradesh": {
-            name: "Uttar Pradesh",
-            image: "public/assets/images/UPP.png",
-            location: "Lucknow, Uttar Pradesh",
-            contact: "+91 98765 43210",
-            description: "Uttar Pradesh is a major hub for poultry, dairy, and sugar industries.",
-        },
-        Jharkhand: {
-            name: "Jharkhand",
-            image: "public/assets/images/jha.png",
-            location: "Ranchi, Jharkhand",
-            contact: "+91 11223 44556",
-            description: "Jharkhand has a rapidly growing poultry and agriculture sector.",
-        },
->>>>>>> 6df14d2072b377bb98238500664fed1e9015efb0
     };
 
     return (
         <div className="row justify-content-center">
             {cards.map((card, index) => (
                 <div key={index} className="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <Link
-                        to={card.link}
-                        style={{ textDecoration: "none" }}
-                        className="d-block"
-                    >
+                    <Link to={card.link} style={{ textDecoration: "none" }} className="d-block">
                         <div
                             className="inner-box shadow-lg overflow-hidden position-relative bg-white"
                             style={cardStyle}
@@ -107,10 +72,7 @@ const StateCards = () => {
                                     className="img-fluid w-100 h-100"
                                     style={imageStyle}
                                 />
-                                <div
-                                    className="overlay position-absolute top-0 start-0 w-100 h-100"
-                                    style={overlayStyle}
-                                ></div>
+                                <div className="overlay position-absolute top-0 start-0 w-100 h-100" style={overlayStyle}></div>
                                 <h5 className="card-title" style={titleStyle}>
                                     {card.title}
                                 </h5>
