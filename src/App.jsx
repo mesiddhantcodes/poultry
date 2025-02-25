@@ -16,6 +16,9 @@ import IntegrationUp from "./pages/IntegrationUp";
 import Broiler from "./pages/Broiler";
 import Layer from "./pages/Layer";
 import Feeder from "./pages/Feeder";
+import Layerproduct from "./pages/Layerproduct";
+import BroilerProduct from "./pages/BroilerProduct";
+import BreederProduct from "./pages/BreederProduct";
 
 const App = () => {
   return (
@@ -38,6 +41,9 @@ const App = () => {
         <Route path="/poultry-division/broiler" element={<Broiler />} />
         <Route path="/poultry-division/layer" element={<Layer />} />
         <Route path="/poultry-division/feeder" element={<Feeder />} />
+        <Route path="/layer-feed" element={<Layerproduct />} />
+        <Route path="/broiler-feed" element={<BroilerProduct />} />
+        <Route path="/breeder-feed" element={<BreederProduct />} />
 
 
       </Routes>

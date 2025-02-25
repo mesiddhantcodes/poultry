@@ -153,13 +153,13 @@ const Header = () => {
                     </a>
                     <ul className="dropdown-menu">
                       <li>
-                        <a href="hariom-Layer.php">Layer Feed </a>
+                        <Link to="/layer-feed">Layer Feed </Link>
                       </li>
                       <li>
-                        <a href="hariom-Broiler.php"> Broiler Feed </a>
+                        <Link to="broiler-feed"> Broiler Feed </Link>
                       </li>
                       <li>
-                        <a href="hariom-Breeder.php"> Breeder Feed </a>
+                        <Link to="breeder-feed"> Breeder Feed </Link>
                       </li>
                     </ul>
                   </li>
