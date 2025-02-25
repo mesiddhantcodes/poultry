@@ -36,10 +36,10 @@ const Mission = () => {
                         <div className="col-xl-7 col-lg-6 about-style-one pr-50">
                             <h2 className="heading">Our Vision</h2>
                             <p align="justify">                                  
-                            At Hariom feeds Pvt.Ltd, we are committed to producing premium poultry feed that meets
+                            At Hariom feeds Private Limited, we are committed to producing premium poultry feed that meets
                              the highest nutritional standards.Our goal is to become a trusted reference for 
-                            quality in the poultry industry,ensuring the well-being and growth of poultry for future generations. 
-                            Through teamwork,social responsibility ,and innovative practices,we create feed solutions that are both functional
+                            quality in the poultry industry, ensuring the well-being and growth of poultry for future generations. 
+                            Through teamwork, social responsibility, and innovative practices,we create feed solutions that are both functional
                             and affordable,helping farmers maximize productivity without incurring extra expenses. 
 
                             </p>
@@ -65,7 +65,7 @@ const Mission = () => {
                         <div className="col-xl-7 col-lg-6 about-style-one pl-50 pt-50">
                             <h2 className="heading">Our Mission</h2>
                             <p align="justify">         
-                            At Hariom Feeds Pvt.Ltd, Our mission is to
+                            At Hariom Feeds Private Limited, Our mission is to
                             produce poultry feed of national standards,ensuring consistent quality and delivering unparalleled 
                             performance benefits to poultry farmers at an affordable price.
                             </p>

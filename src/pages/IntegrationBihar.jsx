@@ -9,6 +9,7 @@ const IntegrationBihar = () => {
         { title: "MOHANIA", address: "Near GT Road Beside Lalita Hospital,Kaimur-821109", phone: "+91-9119900952", email: "int.moh@hariomfeeds.co.in" },
         { title: "MUSARIGHARARI", address: "Near Jagadamba Petrol Pump,Samastipur-848101", phone: "+91-7781000593", email: "int.mgh@hariomfeeds.co.in" },
         { title: "NOKHA", address: "Beside Bajaj Show Room,Patelpuri,Rohtas-802215", phone: "+91-7781000598", email: "int.nkh@hariomfeeds.co.in" },
+        { title: "MADHUBAN", address: "Near Jio Tower PipraBangla,Arwal-804402", phone: "+91-8201901748", email: "int.arl@hariomfeeds.co.in" },
         { title: "ARWAL", address: "Near Jio Tower PipraBangla,Arwal-804402", phone: "+91-8201901748", email: "int.arl@hariomfeeds.co.in" },
     ];
 

@@ -103,7 +103,7 @@ const Home = () => {
                     India."{" "}
                     <span className="d-none d-sm-block">
                       Today Hariom Feeds Pvt. Ltd. Group In Poultry Sector
-                      Requirement of More Than 15 States of India With A Network
+                      Requirement of More Than 03 States of India With A Network
                       of 500 Dealers And More Than 500 Numbers of Employees,
                       Hariom Feeds Pvt. Ltd. Has Developed Research &amp;
                       Development Wing With In-House Laboratories. Our Staff And
@@ -114,7 +114,7 @@ const Home = () => {
                       Preferred Choice For Farmers In Broiler, Layer, Cattle
                       Feeds, We Are The India's Leading Processing Company For
                       Poultry &amp; Cattle Feeds Catering To The Needs of
-                      Various Big Companies
+                      Various Big Companies.
                     </span>
                   </p>
                   <ul className="check-solid-list mt-20">

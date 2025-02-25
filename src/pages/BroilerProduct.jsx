@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 const variants = [
-    { id: 0, name: "Layer Starter Crumble - ChiKrumb", description: "Used for chicks in early stages of life." },
-    { id: 1, name: "Layer Chick Crumble - ChiKrumb", description: "Provides balanced nutrition for growing chicks." },
-    { id: 2, name: "Layer Grower Crumble - GroMax-D", description: "Supports growth and skeletal development." },
-    { id: 3, name: "Layer Crumble / Mash - LayMax", description: "Enhances laying performance in hens." },
-    { id: 4, name: "Layer Grower Concentrate - GroCmix", description: "Helps in uniform flock development." },
-    { id: 5, name: "Layer Concentrate - LayProMix", description: "Essential nutrients for high egg production." }
+    { id: 0, name: "Broiler Starter Crumble ", description: "Used for chicks in early stages of life." },
+    { id: 1, name: "Broiler Chick Crumble ", description: "Provides balanced nutrition for growing chicks." },
+    { id: 2, name: "Broiler Grower Crumble ", description: "Supports growth and skeletal development." },
+    { id: 3, name: "Broiler Crumble / Mash ", description: "Enhances laying performance in hens." },
+    { id: 4, name: "Broiler Grower Concentrate ", description: "Helps in uniform flock development." },
+    { id: 5, name: "Broiler Concentrate ", description: "Essential nutrients for high egg production." }
 ];
 const BroilerProduct = () => {
     const [activeTab, setActiveTab] = useState(0);
@@ -15,7 +15,7 @@ const BroilerProduct = () => {
         <div className="container mt-5">
             <div className="row">
                 <div className="col-12 text-center">
-                    <h1 className="fw-bold text-primary mb-4">Layer Products</h1>
+                    <h1 className="fw-bold text-primary mb-4"> Broiler Products</h1>
                     <p className="lead text-secondary">Explore our premium range of layer feeds designed for optimal poultry growth.</p>
                 </div>
             </div>
