@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Gallery from "./component/Gallery";
@@ -41,11 +41,16 @@ const Home = () => {
         {/* <Header /> */}
         <div className="banner-fade banner-area navigation-circle text-light banner-style-one zoom-effect overflow-hidden">
           <Swiper
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
             navigation
             loop={true}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            slidesPerView={1}
+            centeredSlides={true}
+            watchOverflow={true}
+            spaceBetween={0}
             className="banner-fade"
-            style={{ height: "700px" }}
+            style={{ height: "700px", overflow: "hidden" }}
           >
             {slides.map((slide, index) => (
               <SwiperSlide key={index} className="banner-style-one">

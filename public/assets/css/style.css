@@ -7989,3 +7989,78 @@ p {
   background-color: rgba(200, 138, 18, 0.43);
   opacity: 1;
 }
+.navbar-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.main-nav-content {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background: white;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+.main-nav-content.show-menu {
+  display: block;
+  transform: translateX(0);
+}.navbar-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.main-nav-content {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100vh;
+  background: white;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+.main-nav-content.show-menu {
+  right: 0;
+}
+.navbar-collapse ul {
+  padding-left: 0;
+}
+.navbar-collapse ul li {
+  list-style: none;
+  padding: 10px 0;
+}
+.navbar-collapse ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  display: block;
+}
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.overlay-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
