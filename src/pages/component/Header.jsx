@@ -84,6 +84,10 @@ const Header = () => {
                 <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
 
                 {/* About Us Dropdown */}
+                {/* <li className="dropdown">
+
+                </li> */}
+
                 <li className="dropdown">
                   <Link to="#" className="dropdown-toggle" onClick={() => toggleDropdown("about")}>
                     About Us
@@ -96,7 +100,6 @@ const Header = () => {
                     <li><Link to="/why-choose-us" onClick={toggleMenu}>Why Choose Us</Link></li>
                   </ul>
                 </li>
-
                 {/* Products Dropdown */}
                 <li className="dropdown">
                   <Link to="#" className="dropdown-toggle" onClick={() => toggleDropdown("products")}>
@@ -127,74 +130,13 @@ const Header = () => {
             </div>
 
             {/* Overlay screen for menu */}
-            {menuOpen && <div className="overlay-screen" onClick={toggleMenu} />}
+            {menuOpen && <div className="overlay-screen show" onClick={toggleMenu} />}
           </div>
         </nav>
       </header>
 
       {/* Custom CSS */}
-      <style>
-        {`
-          .navbar-toggle {
-            background: none;
-            border: none;
-            font-size: 24px;
-            cursor: pointer;
-          }
-          .main-nav-content {
-            position: fixed;
-            top: 0;
-            right: -250px;
-            width: 250px;
-            height: 100vh;
-            background: white;
-            box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            transition: right 0.3s ease-in-out;
-            display: flex;
-            flex-direction: column;
-            z-index: 1000;
-          }
-          .main-nav-content.show-menu {
-            right: 0;
-          }
-          .nav li {
-            list-style: none;
-            padding: 10px 0;
-          }
-          .nav li a {
-            text-decoration: none;
-            color: #333;
-            font-size: 18px;
-            display: block;
-          }
-          .close-btn {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background: none;
-            border: none;
-            font-size: 24px;
-            cursor: pointer;
-          }
-          .overlay-screen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 999;
-          }
-          .dropdown-menu {
-            display: none;
-            padding-left: 15px;
-          }
-          .dropdown-menu.show {
-            display: block;
-          }
-        `}
-      </style>
+
     </>
   );
 };

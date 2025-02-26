@@ -2790,6 +2790,30 @@ nav.navbar.validnavs.inc-shape::after {
 .navbar-nav li {
   margin: 0 15px; /* Adjust spacing */
 }
+.navbar-nav li a:hover {
+  background: linear-gradient(135deg, #f1d587, #ffb347);
+  color: #000;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Fancy underline effect */
+/* .navbar-nav li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  background: #ffb347;
+  transition: all 0.3s ease-in-out;
+} */
+
+.navbar-nav li a:hover::after {
+  width: 100%;
+  left: 0;
+}
 
 /* Hide the hamburger menu button on larger screens */
 .navbar-toggle {
@@ -7995,26 +8019,20 @@ p {
   font-size: 24px;
   cursor: pointer;
 }
-.main-nav-content {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 250px;
-  height: 100vh;
-  background: white;
-  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  transition: transform 0.3s ease-in-out;
-}
+
 .main-nav-content.show-menu {
   display: block;
   transform: translateX(0);
-}.navbar-toggle {
+}
+.navbar-toggle {
   background: none;
   border: none;
   font-size: 24px;
   cursor: pointer;
+}
+.navbar-toggle.close-btn {
+  background: #e69449; /* Temporary for visibility */
+  color: #e69449;
 }
 .main-nav-content {
   position: fixed;
@@ -8023,8 +8041,10 @@ p {
   width: 250px;
   height: 100vh;
   background: white;
-  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  box-shadow: -5px 0 10px rgba(238, 0, 0, 0.1);
+  padding-left: 20px;
+  padding-right: 20px;
+
   transition: right 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
@@ -8046,6 +8066,66 @@ p {
   font-size: 18px;
   display: block;
 }
+
+.overlay-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Navbar Toggle Button */
+.navbar-toggle {
+  background: #e69449;
+  padding: 2px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.navbar-toggle i {
+  color: #fff;
+  font-size: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-toggle:hover {
+  background: #ebebeb;
+  border-color: #0000007a;
+  transform: scale(1.1);
+}
+
+/* Close Button */
+/* .main-nav-content {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100vh;
+  background: white;
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+} */
+.main-nav-content.show-menu {
+  right: 0;
+}
+.nav li {
+  list-style: none;
+  padding: 10px 0;
+}
+.nav li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  display: block;
+}
 .close-btn {
   position: absolute;
   top: 15px;
@@ -8063,4 +8143,60 @@ p {
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.overlay-screen.show {
+  opacity: 1;
+  pointer-events: auto; /* Allows clicks when menu is open */
+}
+
+.dropdown-menu {
+  background: rgb(255, 2, 2);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdown-menu li a {
+  padding: 10px;
+  display: block;
+  color: #333;
+  transition: background 0.3s ease-in-out;
+}
+
+.dropdown-menu li a:hover {
+  background: #ff8d0b;
+  color: #ffffff;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+@media (min-width: 992px) {
+  .main-nav-content {
+    position: static; /* Allows navbar to be visible on larger screens */
+    width: auto;
+    height: auto;
+    display: flex !important;
+    flex-direction: row;
+    box-shadow: none;
+    background: transparent;
+  }
+  .navbar-toggle {
+    display: none; /* Hide menu toggle button on large screens */
+  }
+  .dropdown-menu {
+    position: absolute;
+    display: none;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
 }
