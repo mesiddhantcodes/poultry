@@ -2791,8 +2791,8 @@ nav.navbar.validnavs.inc-shape::after {
   margin: 0 15px; /* Adjust spacing */
 }
 .navbar-nav li a:hover {
-  background: linear-gradient(135deg, #f1d587, #ffb347);
-  color: #000;
+  background: linear-gradient(135deg, #e6e601, #da8536);
+  color: #fff; /* Change text color to white */
   border-radius: 8px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
@@ -8024,15 +8024,10 @@ p {
   display: block;
   transform: translateX(0);
 }
-.navbar-toggle {
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-}
+
 .navbar-toggle.close-btn {
-  background: #e69449; /* Temporary for visibility */
-  color: #e69449;
+  background: #ffffff; /* Temporary for visibility */
+  color: #000000;
 }
 .main-nav-content {
   position: fixed;
@@ -8079,18 +8074,16 @@ p {
 
 /* Navbar Toggle Button */
 .navbar-toggle {
-  background: #e69449;
+  background: #ffffff;
   padding: 2px 8px;
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s ease-in-out, transform 0.2s ease;
-}
-
-.navbar-toggle i {
-  color: #fff;
+  color: #000000;
   font-size: 20px;
   transition: transform 0.3s ease-in-out;
 }
+
 
 .navbar-toggle:hover {
   background: #ebebeb;
@@ -8098,21 +8091,6 @@ p {
   transform: scale(1.1);
 }
 
-/* Close Button */
-/* .main-nav-content {
-  position: fixed;
-  top: 0;
-  right: -250px;
-  width: 250px;
-  height: 100vh;
-  background: white;
-  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  transition: right 0.3s ease-in-out;
-  display: flex;
-  flex-direction: column;
-  z-index: 1000;
-} */
 .main-nav-content.show-menu {
   right: 0;
 }
@@ -8154,7 +8132,7 @@ p {
 }
 
 .dropdown-menu {
-  background: rgb(255, 2, 2);
+  background: rgb(255, 255, 255);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   overflow: hidden;
@@ -8162,14 +8140,15 @@ p {
 }
 
 .dropdown-menu li a {
-  padding: 10px;
+  padding: 4px;
   display: block;
+  font-size: 0.9rem;
   color: #333;
-  transition: background 0.3s ease-in-out;
+  /* transition: background 0.3s ease-in-out; */
 }
 
 .dropdown-menu li a:hover {
-  background: #ff8d0b;
+  background: #fdb768;
   color: #ffffff;
 }
 

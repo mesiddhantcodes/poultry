@@ -2171,7 +2171,7 @@ nav.navbar.validnavs.brand-center {
 
 @media (min-width: 1024px) {
     nav.navbar ul.nav>li>a {
-        padding: 30px 15px;
+        /* padding: 30px 15px; */
         font-weight: 800;
         font-size: 14px;
         text-transform: uppercase;

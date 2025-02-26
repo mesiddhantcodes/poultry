@@ -93,11 +93,11 @@ const Header = () => {
                     About Us
                   </Link>
                   <ul className={`dropdown-menu ${dropdownOpen === "about" ? "show" : ""}`}>
-                    <li><Link to="/about" onClick={toggleMenu}>About Us</Link></li>
-                    <li><Link to="/director" onClick={toggleMenu}>Directors Desk</Link></li>
-                    <li><Link to="/journey" onClick={toggleMenu}>Our Journey</Link></li>
-                    <li><Link to="/mission" onClick={toggleMenu}>Vision & Mission</Link></li>
-                    <li><Link to="/why-choose-us" onClick={toggleMenu}>Why Choose Us</Link></li>
+                    <li><Link to="/about" >About Us</Link></li>
+                    <li><Link to="/director" >Directors Desk</Link></li>
+                    <li><Link to="/journey" >Our Journey</Link></li>
+                    <li><Link to="/mission" >Vision & Mission</Link></li>
+                    <li><Link to="/why-choose-us" >Why Choose Us</Link></li>
                   </ul>
                 </li>
                 {/* Products Dropdown */}
