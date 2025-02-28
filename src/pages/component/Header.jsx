@@ -128,7 +128,7 @@ const Header = () => {
                 </li>
 
                 <li><a href="gallery.php" onClick={toggleMenu}>Gallery</a></li>
-                <li><a href="contact.php" onClick={toggleMenu}>Contact</a></li>
+                <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
               </ul>
             </div>
 

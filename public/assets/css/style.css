@@ -8263,3 +8263,37 @@ p {
     font-size: 10px;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .main-nav-content {
+    display: none; /* Hide menu by default */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .show-menu {
+    display: block !important; /* Show menu when toggled */
+  }
+
+  .navbar-toggle {
+    display: block !important; /* Show hamburger menu */
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column; /* Stack menu items */
+  }
+
+  .navbar-nav li {
+    padding: 10px;
+  }
+}
