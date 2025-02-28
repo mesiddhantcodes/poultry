@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 const variants = [
-    { id: 0, name: "Broiler Starter Crumble ", description: "Used for chicks in early stages of life." },
-    { id: 1, name: "Broiler Chick Crumble ", description: "Provides balanced nutrition for growing chicks." },
-    { id: 2, name: "Broiler Grower Crumble ", description: "Supports growth and skeletal development." },
-    { id: 3, name: "Broiler Crumble / Mash ", description: "Enhances laying performance in hens." },
-    { id: 4, name: "Broiler Grower Concentrate ", description: "Helps in uniform flock development." },
-    { id: 5, name: "Broiler Concentrate ", description: "Essential nutrients for high egg production." }
+    { id: 0, name: "Broiler Pre  Starter Crumb ", description: "Used for chicks in early stages of life." },
+    { id: 1, name: "Broiler Starter Crumb ", description: "Provides balanced nutrition for growing chicks." },
+    { id: 2, name: "Broiler Developer Pellet ", description: "Supports growth and skeletal development." },
+    { id: 3, name: "Broiler JUmbo-Jet 33% Concentrate ", description: "Enhances laying performance in hens." },
+    { id: 4, name: "Broiler Supremo 23% Concentrate ", description: "Helps in uniform flock development." }
+    
 ];
 const BroilerProduct = () => {
     const [activeTab, setActiveTab] = useState(0);
