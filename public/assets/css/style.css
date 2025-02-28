@@ -8084,7 +8084,6 @@ p {
   transition: transform 0.3s ease-in-out;
 }
 
-
 .navbar-toggle:hover {
   background: #ebebeb;
   border-color: #0000007a;
@@ -8177,5 +8176,90 @@ p {
   }
   .dropdown:hover .dropdown-menu {
     display: block;
+  }
+} /* Align logo image and text side by side */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds space between image and text */
+  text-decoration: none;
+}
+
+/* Logo Image */
+.navbar-brand img {
+  max-width: 80px; /* Adjust size as needed */
+}
+
+/* Logo Text */
+.logo-container {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main logo text */
+.logo-text {
+  font-family: "Georgia", serif;
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #7a0c0c, #c62828);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3), 5px 5px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.logo-text:hover {
+  transform: scale(1.05);
+}
+
+/* Subtitle text */
+.logo-subtitle {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #008000; /* Green */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-style: italic;
+  margin-top: -5px;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    flex-direction: row; /* Stack image & text on smaller screens */
+    gap: 5px; /* Reduce spacing */
+    text-align: left;
+  }
+
+  .navbar-brand img {
+    max-width: 60px; /* Smaller logo for small screens */
+  }
+
+  .logo-text {
+    font-size: 20px; /* Adjust font size */
+  }
+
+  .logo-subtitle {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .navbar-brand img {
+    max-width: 50px; /* Smaller logo for mobile screens */
+  }
+
+  .logo-text {
+    font-size: 18px;
+  }
+
+  .logo-subtitle {
+    font-size: 10px;
   }
 }

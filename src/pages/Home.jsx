@@ -6,6 +6,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Gallery from "./component/Gallery";
+import Logo from "./component/Logo";
 // import "./styles.css"; // Import your styles
 
 const Home = () => {
@@ -78,6 +79,9 @@ const Home = () => {
             ))}
           </Swiper>
         </div>
+        <header className="bg-light py-3 text-center shadow-sm">
+        <Logo />
+        </header>
         <div
           className="about-style-one-area default-padding"
           style={{ background: 'url("/assets/images/7583.jpg")' }}

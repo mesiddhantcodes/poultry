@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Logo from "./Logo";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -70,9 +71,11 @@ const Header = () => {
               <button type="button" className="navbar-toggle" onClick={toggleMenu}>
                 <i className="fa fa-bars" />
               </button>
-              <a className="navbar-brand" href="/">
-                <img src="assets/images/logo.png" className="logo" alt="Hariom Feeds Pvt. Ltd." />
+              <a className="navbar-brand d-flex align-items-center" href="/">
+                <img src="assets/images/logo1.png" className="logo" alt="Hariom Feeds Pvt. Ltd." />
+                <Logo />
               </a>
+
             </div>
 
             {/* Main Navigation */}
