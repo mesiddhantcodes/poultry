@@ -21,7 +21,7 @@ const Header = () => {
           <div className="row align-center">
             <div className="col-lg-9">
               <div className="flex-item left">
-                <p className="more101">Hariom Feeds Pvt. Ltd.</p>
+                <p className="more101">Hariom Feeds Pvt. Ltd. </p>
                 <ul>
                   <li>
                     <i className="fas fa-map-marker-alt" /> Gopalganj, Bihar

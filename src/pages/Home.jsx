@@ -103,7 +103,7 @@ const Home = () => {
                     Hariom Feeds Pvt. Ltd., founded in 2003 by Mr. Dilip Kumar
                     Singh in Gopalganj, Bihar, has grown into a leading producer
                     of high-quality cattle and poultry feeds in India, producing
-                    250 MT daily. With a strong presence in 15 states, a network
+                    250 MT daily. With a strong presence in 03 states, a network
                     of 500 dealers, and over 500 employees, the company offers a
                     diverse range of feeds and integrated broiler farming.
                     Equipped with modern technology and in-house R&D labs,
@@ -127,7 +127,7 @@ const Home = () => {
                     </span>
                   </p>
                   <ul className="check-solid-list mt-20">
-                    <li>An ISO 9001:2015Certified Company</li>
+                    <li>An ISO 9001:2015 Certified Company</li>
                     <li>Use of Modern Technology</li>
                     <li>Strict Quality Control</li>
                     <li>Experienced Team</li>

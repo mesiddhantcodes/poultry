@@ -7,7 +7,7 @@ const Logo = () => {
       <h1 className="logo-text">Hariom Feeds Pvt. Ltd.</h1>
 
       {/* Certification Subtitle */}
-      <p className="logo-subtitle">[An ISO 9001:2008 Certified Company]</p>
+      <p className="logo-subtitle">[An ISO 9001:2015 Certified Company]</p>
     </div>
   );
 };

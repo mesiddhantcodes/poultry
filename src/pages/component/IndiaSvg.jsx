@@ -4,17 +4,24 @@ import React from 'react';
 
 const cityCoordinates = {
     Bihar: {
-        Gopalganj: { x: 300, y: 200 },
-        Motihari: { x: 320, y: 190 },
-        Marhaura: { x: 310, y: 210 },
+        Gopalganj: { x: 540, y: 390 },
+        Motihari: { x: 560, y: 380 },
+        Marhaura: { x: 550, y: 410 },
+        Mohania: { x: 522, y: 436 },
+        Musarigharari : { x: 588, y: 410 },
+        Nokha : { x: 540, y: 435 },
+        Madhuban : { x: 560, y: 370 },
+        Arwal : { x: 550, y: 430 },
     },
     Jharkhand: {
-        Ramgarh: { x: 350, y: 250 },
-        Bokaro: { x: 370, y: 260 },
+        Ramgarh: { x: 585, y: 470 },
+        Bokaro: { x: 590, y: 470 },
+        Barhi : { x: 580, y: 470 },
     },
     UttarPradesh: {
-        Kasia: { x: 280, y: 180 },
+        Kasia: { x: 525, y: 370 },
         Varanasi: { x: 490, y: 405 },
+        Mau: { x: 505, y: 410 },
     },
 };
 const IndiaSvg = ({ selectedState ,selectedCity }) => {
