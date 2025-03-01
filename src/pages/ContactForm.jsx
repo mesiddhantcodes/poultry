@@ -9,7 +9,7 @@ const branches = {
 };
 
 const ContactForm = () => {
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState({ 
         name: "",
         mobile: "",
         email: "",
