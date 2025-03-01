@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Typography, TextField, MenuItem, Button, Paper, Grid } from "@mui/material";
+import { Container, Typography, TextField, MenuItem, Button, Paper, Grid, Box } from "@mui/material";
 import MapComponent from "./component/MapComponent";
 
 const branches = {
@@ -7,9 +7,16 @@ const branches = {
     Jharkhand: ["Ramgarh", "Bokaro", "Barhi"],
     UttarPradesh: ["Kasia", "Mau", "Varanasi"],
 };
+const roles = {
+    "Farmer": "Farmer",
+    "Dealer": "Dealer",
+    "Distributor": "Distributor",
+    "Retailer": "Retailer",
+}
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
+        joinus: "",
         name: "",
         mobile: "",
         email: "",
@@ -29,55 +36,196 @@ const ContactForm = () => {
     };
 
     return (
-        <Container maxWidth="lg" sx={{ mt: 4 }}>
-            <Typography variant="h5" gutterBottom align="center" sx={{ fontWeight: 'bold', color: 'primary.main' }}>
-                Contact Us
-            </Typography>
+        <div className="pb-5" style={{ backgroundColor: "#f9f9f9", paddingBottom: "40px" }}>
+            <Container
+                maxWidth="xl"
+                sx={{ mt: 4, width: "100%", mx: "auto", px: { xs: 2, sm: 3, md: 5 } }}
+            >
+                {/* Title */}
+                <Typography
+                    variant="h4"
+                    align="center"
+                    sx={{ fontWeight: "bold", color: "primary.main", mb: 3 }}
+                >
+                    Contact Us
+                </Typography>
 
-            <Grid container spacing={4} alignItems="stretch">
-                {/* Form Section */}
-                <Grid item xs={12} md={6}>
-                    <Paper sx={{ p: 3, boxShadow: 3, borderRadius: 2, bgcolor: "white" }}>
-                        <form onSubmit={handleSubmit}>
-                            <TextField fullWidth label="Name" name="name" value={formData.name} onChange={handleChange} margin="normal" required />
-                            <TextField fullWidth label="Mobile Number" name="mobile" value={formData.mobile} onChange={handleChange} margin="normal" required />
-                            <TextField fullWidth label="Email" name="email" value={formData.email} onChange={handleChange} margin="normal" required />
-                            <TextField fullWidth label="Address" name="address" value={formData.address} onChange={handleChange} margin="normal" required />
-
-                            <TextField select fullWidth label="State" name="state" value={formData.state} onChange={handleChange} margin="normal" required>
-                                {Object.keys(branches).map((state) => (
-                                    <MenuItem key={state} value={state}>{state}</MenuItem>
-                                ))}
-                            </TextField>
-
-                            {formData.state && (
-                                <TextField select fullWidth label="Branch" name="branch" value={formData.branch} onChange={handleChange} margin="normal" required>
-                                    {branches[formData.state].map((branch) => (
-                                        <MenuItem key={branch} value={branch}>{branch}</MenuItem>
+                <Grid
+                    container
+                    spacing={4}
+                    sx={{
+                        minHeight: "80vh",
+                        display: "flex",
+                        alignItems: "stretch",
+                        flexDirection: { xs: "column", md: "row" } // Stack on mobile, side-by-side on larger screens
+                    }}
+                >
+                    {/* Form Section */}
+                    <Grid
+                        item
+                        xs={12}
+                        md={6}
+                        sx={{
+                            display: "flex",
+                            flexDirection: "column",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            width: "100%"
+                        }}
+                    >
+                        <Paper
+                            sx={{
+                                p: { xs: 2, sm: 3, md: 4 },
+                                boxShadow: 5,
+                                borderRadius: 3,
+                                bgcolor: "white",
+                                height: "100%",
+                                minHeight: { xs: "auto", md: "550px" },
+                                display: "flex",
+                                flexDirection: "column",
+                                overflow: "hidden",
+                                width: { xs: "100%", sm: "90%", md: "90%", lg: "70%" },
+                                mx: "auto"
+                            }}
+                        >
+                            <form
+                                onSubmit={handleSubmit}
+                                style={{
+                                    padding: "10px",
+                                    flex: 1,
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    gap: "12px",
+                                    overflowY: "auto",
+                                    paddingBottom: "10px"
+                                }}
+                            >
+                                <TextField
+                                    select
+                                    fullWidth
+                                    size="small"
+                                    label="Join Us"
+                                    name="joinus"
+                                    value={formData.joinus}
+                                    onChange={handleChange}
+                                    required
+                                    InputProps={{
+                                        sx: { height: "54px" }
+                                    }}
+                                >
+                                    {Object.keys(roles).map((role) => (
+                                        <MenuItem key={role} value={role}>
+                                            {roles[role]}
+                                        </MenuItem>
                                     ))}
                                 </TextField>
-                            )}
 
-                            <TextField fullWidth label="Message" name="message" value={formData.message} onChange={handleChange} margin="normal" multiline rows={4} required />
+                                <TextField fullWidth size="small" label="Name" name="name" value={formData.name} onChange={handleChange} required InputProps={{
+                                    sx: { height: "54px" }
+                                }} />
+                                <TextField fullWidth size="small" label="Mobile Number" name="mobile" value={formData.mobile} onChange={handleChange} required InputProps={{
+                                    sx: { height: "54px" }
+                                }} />
+                                <TextField fullWidth size="small" label="Email" name="email" value={formData.email} onChange={handleChange} required InputProps={{
+                                    sx: { height: "54px" }
+                                }} />
+                                <TextField fullWidth size="small" label="Address" name="address" value={formData.address} onChange={handleChange} required InputProps={{
+                                    sx: { height: "54px" }
+                                }} />
 
-                            <Button type="submit" variant="contained" color="primary" fullWidth sx={{ mt: 2, py: 1.5, fontSize: '1rem' }}>
-                                Submit
-                            </Button>
-                        </form>
-                    </Paper>
+                                <TextField select fullWidth size="small" label="State" name="state" value={formData.state} onChange={handleChange} required InputProps={{
+                                    sx: { height: "54px" }
+                                }}>
+                                    {Object.keys(branches).map((state) => (
+                                        <MenuItem key={state} value={state}>{state}</MenuItem>
+                                    ))}
+                                </TextField>
+
+                                {formData.state && (
+                                    <TextField select fullWidth size="small" label="Branch" name="branch" value={formData.branch} onChange={handleChange} required>
+                                        {branches[formData.state].map((branch) => (
+                                            <MenuItem key={branch} value={branch}>{branch}</MenuItem>
+                                        ))}
+                                    </TextField>
+                                )}
+
+                                <TextField
+                                    fullWidth
+                                    size="small"
+                                    label="Message"
+                                    name="message"
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    multiline
+                                    rows={4}
+                                    required
+                                />
+
+                                {/* Submit Button - Always Visible */}
+                                <Button
+                                    type="submit"
+                                    variant="contained"
+                                    color="primary"
+                                    fullWidth
+                                    sx={{
+                                        mt: "auto",
+                                        py: 1.5,
+                                        fontSize: "1rem",
+                                        fontWeight: "bold"
+                                    }}
+                                >
+                                    Submit
+                                </Button>
+                            </form>
+                        </Paper>
+                    </Grid>
+
+                    {/* Map Section */}
+                    <Grid
+                        item
+                        xs={12}
+                        md={6}
+                        sx={{
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            width: "100%"
+                        }}
+                    >
+
+
+                        <Paper
+
+                            sx={{
+                                p: 2,
+                                boxShadow: 5,
+                                borderRadius: 3,
+                                width: { xs: "100%", sm: "90%", md: "100%" },
+                                height: { xs: "300px", md: "100%" },
+                                minHeight: "500px",
+                                display: "flex",
+                                flexDirection: "column",  // Ensures vertical stacking
+                                justifyContent: "flex-start", alignItems: "center",
+                                bgcolor: "#ffffff"
+                            }}
+                        >
+                            <Typography
+                                variant="h6"
+                                align="center"
+                                sx={{ mb: 2, fontWeight: "bold", color: "primary.dark" }}
+                            >
+                                Selected Location: {formData.state ? `${formData.state} - ${formData.branch || "None"}` : "None"}
+                            </Typography>
+                            <Box sx={{ flexGrow: 1, width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                <MapComponent selectedState={formData.state} selectedCity={formData.branch} />
+                            </Box>                        </Paper>
+                    </Grid>
                 </Grid>
+            </Container>
+        </div>
 
-                {/* Map Section */}
-                <Grid item xs={12} md={6}>
-                    <Paper sx={{ p: 2, boxShadow: 3, borderRadius: 2, height: "100%", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-                        <Typography variant="h6" align="center" gutterBottom>
-                            Selected State: {formData.state || "None"}
-                        </Typography>
-                        <MapComponent selectedState={formData.state} selectedCity={formData.branch} />
-                    </Paper>
-                </Grid>
-            </Grid>
-        </Container>
+
     );
 };
 

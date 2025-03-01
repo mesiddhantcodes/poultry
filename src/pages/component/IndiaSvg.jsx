@@ -8,15 +8,15 @@ const cityCoordinates = {
         Motihari: { x: 560, y: 380 },
         Marhaura: { x: 550, y: 410 },
         Mohania: { x: 522, y: 436 },
-        Musarigharari : { x: 588, y: 410 },
-        Nokha : { x: 540, y: 435 },
-        Madhuban : { x: 560, y: 370 },
-        Arwal : { x: 550, y: 430 },
+        Musarigharari: { x: 588, y: 410 },
+        Nokha: { x: 540, y: 435 },
+        Madhuban: { x: 560, y: 370 },
+        Arwal: { x: 550, y: 430 },
     },
     Jharkhand: {
         Ramgarh: { x: 585, y: 470 },
         Bokaro: { x: 590, y: 470 },
-        Barhi : { x: 580, y: 470 },
+        Barhi: { x: 580, y: 470 },
     },
     UttarPradesh: {
         Kasia: { x: 525, y: 370 },
@@ -24,7 +24,7 @@ const cityCoordinates = {
         Mau: { x: 505, y: 410 },
     },
 };
-const IndiaSvg = ({ selectedState ,selectedCity }) => {
+const IndiaSvg = ({ selectedState, selectedCity }) => {
     // console.log(selectedCity)
     const defaultColor = "#D89154";
     const highlightColor = "#ff5933";
@@ -41,7 +41,7 @@ const IndiaSvg = ({ selectedState ,selectedCity }) => {
             strokeWidth=".5"
             version="1.2"
             viewBox="0 0 1000 1000"
-            width={1000}
+            width="100%"
             xmlns="http://www.w3.org/2000/svg"
         >
 
@@ -346,22 +346,48 @@ const IndiaSvg = ({ selectedState ,selectedCity }) => {
                 <circle className="Tamil Nadu" cx="379.6" cy="835.6" id="INTN"></circle>
                 <circle className="Tripura" cx="740.6" cy="472.2" id="INTR"></circle>
                 {selectedCity && cityCoordinates[selectedState] && cityCoordinates[selectedState][selectedCity] && (
-                    <circle
-                        cx={cityCoordinates[selectedState][selectedCity].x}
-                        cy={cityCoordinates[selectedState][selectedCity].y}
-                        r="8"
-                        fill="blue"
-                        stroke="white"
-                        strokeWidth="2"
-                    />
+                    <g>
+                        {/* Location Pin (Google Maps Style) */}
+                        <path
+                            d={`M ${cityCoordinates[selectedState][selectedCity].x} ${cityCoordinates[selectedState][selectedCity].y}
+                           C ${cityCoordinates[selectedState][selectedCity].x - 25} ${cityCoordinates[selectedState][selectedCity].y - 35},
+                             ${cityCoordinates[selectedState][selectedCity].x + 25} ${cityCoordinates[selectedState][selectedCity].y - 37},
+                             ${cityCoordinates[selectedState][selectedCity].x} ${cityCoordinates[selectedState][selectedCity].y}`}
+                            fill="red"
+                            stroke="white"
+                            strokeWidth="1"
+                            opacity="1.9"
+                        />
+
+                        {/* Inner White Circle */}
+                        <circle
+                            cx={cityCoordinates[selectedState][selectedCity].x}
+                            cy={cityCoordinates[selectedState][selectedCity].y - 20.3}
+                            r="6"
+                            fill="white"
+                            stroke="black"
+                            strokeWidth="0.9"
+                        />
+
+                        {/* Shadow Effect */}
+                        <ellipse
+                            cx={cityCoordinates[selectedState][selectedCity].x}
+                            cy={cityCoordinates[selectedState][selectedCity].y + 5}
+                            rx="6"
+                            ry="2"
+                            fill="rgba(0, 0, 0, 1.3)"
+                        />
+                    </g>
+
+
                 )}
 
                 {/* City Label */}
                 {selectedCity && cityCoordinates[selectedState] && cityCoordinates[selectedState][selectedCity] && (
                     <text
                         x={cityCoordinates[selectedState][selectedCity].x + 10}
-                        y={cityCoordinates[selectedState][selectedCity].y - 10}
-                        fontSize="16"
+                        y={cityCoordinates[selectedState][selectedCity].y - 15}
+                        fontSize="28"
                         fill="black"
                         fontWeight="bold"
                     >
