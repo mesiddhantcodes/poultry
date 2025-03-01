@@ -176,7 +176,7 @@ const Home = () => {
               {/* item */}
               <div className="col-md-4 text-center">
                 <div className="b1">
-                  <img src="/assets/images/layer.png" alt="Layer" />
+                  <img src="/assets/images/Layer2.png" alt="Layer" />
                   <h3 className="sub-title ">Layer</h3>
                 </div>
               </div>

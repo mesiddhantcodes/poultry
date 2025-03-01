@@ -15,8 +15,12 @@ const roles = {
 }
 
 const ContactForm = () => {
+<<<<<<< HEAD
     const [formData, setFormData] = useState({
         joinus: "",
+=======
+    const [formData, setFormData] = useState({ 
+>>>>>>> fe3e80982dfa2d3d2eac3f6f0f90d6a2ae367f3a
         name: "",
         mobile: "",
         email: "",

@@ -5,7 +5,7 @@ const ServicesSection = () => {
     const services = [
         { title: "Broiler", image: "/public/assets/images/broiler.jpg", link: "/poultry-division/broiler" },
         { title: "Layer", image: "/public/assets/images/layer.jpeg", link: "/poultry-division/layer" },
-        { title: "Breeder", image: "/public/assets/images/1.jpg", link: "/poultry-division/feeder" },
+        { title: "Breeder", image: "/public/assets/images/b2.jpg", link: "/poultry-division/feeder" },
     ];
 
     const cardStyle = {
