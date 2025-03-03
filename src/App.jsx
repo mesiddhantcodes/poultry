@@ -20,6 +20,7 @@ import Layerproduct from "./pages/Layerproduct";
 import BroilerProduct from "./pages/BroilerProduct";
 import BreederProduct from "./pages/BreederProduct";
 import ContactForm from "./pages/ContactForm";
+import GalleryPage from "./pages/GalleryPage";
 
 const App = () => {
   return (
@@ -46,7 +47,7 @@ const App = () => {
         <Route path="/broiler-feed" element={<BroilerProduct />} />
         <Route path="/breeder-feed" element={<BreederProduct />} />
         <Route path="/contact" element={<ContactForm />} />
-
+        <Route path="/gallery" element={<GalleryPage />} />
       </Routes>
       <Footer />
     </Router>

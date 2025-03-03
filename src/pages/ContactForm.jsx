@@ -47,7 +47,11 @@ const ContactForm = () => {
                     align="center"
                     sx={{ fontWeight: "bold", color: "primary.main", mb: 3 }}
                 >
-                    Contact Us
+                    <h2 className="text-2xl font-semibold text-[#0c2957] mb-3"
+                    >
+                        Contact Us
+
+                    </h2>
                 </Typography>
 
                 <Grid
