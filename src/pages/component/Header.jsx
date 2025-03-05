@@ -87,7 +87,7 @@ const Header = () => {
                 <i className="fas fa-times" />
               </button>
               <ul className="nav navbar-nav navbar-right">
-                <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+                <li><Link to="/" onClick={toggleMenu} className="textt">Home</Link></li>
 
                 {/* About Us Dropdown */}
                 {/* <li className="dropdown">
@@ -95,43 +95,43 @@ const Header = () => {
                 </li> */}
 
                 <li className="dropdown">
-                  <Link to="#" className="dropdown-toggle" onClick={() => toggleDropdown("about")}>
+                  <Link to="#" className="dropdown-toggle textt" onClick={() => toggleDropdown("about")}>
                     About Us
                   </Link>
                   <ul className={`dropdown-menu ${dropdownOpen === "about" ? "show" : ""}`}>
-                    <li><Link to="/about" >About Us</Link></li>
-                    <li><Link to="/director" >Directors Desk</Link></li>
-                    <li><Link to="/journey" >Our Journey</Link></li>
-                    <li><Link to="/mission" >Vision & Mission</Link></li>
-                    <li><Link to="/why-choose-us" >Why Choose Us</Link></li>
+                    <li><Link to="/about" className="textt">About Us</Link></li>
+                    <li><Link to="/director" className="textt">Directors Desk</Link></li>
+                    <li><Link to="/journey" className="textt" >Our Journey</Link></li>
+                    <li><Link to="/mission" className="textt">Vision & Mission</Link></li>
+                    <li><Link to="/why-choose-us" className="textt" >Why Choose Us</Link></li>
                   </ul>
                 </li>
                 {/* Products Dropdown */}
                 <li className="dropdown">
-                  <Link to="#" className="dropdown-toggle" onClick={() => toggleDropdown("products")}>
+                  <Link to="#" className="dropdown-toggle textt" onClick={() => toggleDropdown("products")}>
                     Products
                   </Link>
                   <ul className={`dropdown-menu ${dropdownOpen === "products" ? "show" : ""}`}>
-                    <li><Link to="/layer-feed" onClick={toggleMenu}>Layer Feed</Link></li>
-                    <li><Link to="/broiler-feed" onClick={toggleMenu}>Broiler Feed</Link></li>
-                    <li><Link to="/breeder-feed" onClick={toggleMenu}>Breeder Feed</Link></li>
+                    <li><Link to="/layer-feed" className="textt" onClick={toggleMenu}>Layer Feed</Link></li>
+                    <li><Link to="/broiler-feed" className="textt" onClick={toggleMenu}>Broiler Feed</Link></li>
+                    <li><Link to="/breeder-feed" className="textt" onClick={toggleMenu}>Breeder Feed</Link></li>
                   </ul>
                 </li>
 
                 {/* Divisions Dropdown */}
                 <li className="dropdown">
-                  <Link to="#" className="dropdown-toggle" onClick={() => toggleDropdown("divisions")}>
+                  <Link to="#" className="dropdown-toggle textt" onClick={() => toggleDropdown("divisions")}>
                     Divisions
                   </Link>
                   <ul className={`dropdown-menu ${dropdownOpen === "divisions" ? "show" : ""}`}>
-                    <li><Link to="/poultry-division" onClick={toggleMenu}>Poultry Division</Link></li>
-                    <li><Link to="https://shivgangapashuaahar.com/index.php" onClick={toggleMenu}>Cattle Division</Link></li>
-                    <li><Link to="/integration" onClick={toggleMenu}>Integration Division</Link></li>
+                    <li><Link to="/poultry-division" className="textt" onClick={toggleMenu}>Poultry Division</Link></li>
+                    <li><Link to="https://shivgangapashuaahar.com/index.php" className="textt" onClick={toggleMenu}>Cattle Division</Link></li>
+                    <li><Link to="/integration" className="textt" onClick={toggleMenu}>Integration Division</Link></li>
                   </ul>
                 </li>
 
-                <li><Link to="/gallery" onClick={toggleMenu}>Gallery</Link></li>
-                <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
+                <li><Link to="/gallery" className="textt" onClick={toggleMenu}>Gallery</Link></li>
+                <li><Link to="/contact" className="textt" onClick={toggleMenu}>Contact</Link></li>
               </ul>
             </div>
 

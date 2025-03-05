@@ -8230,7 +8230,7 @@ p {
 .registered-symbol {
   font-size: 24px;
   font-weight: bold;
-  color: #00A5FE; /* Red color */
+  color: #00a5fe; /* Red color */
   position: absolute;
   top: -15px; /* Adjust position */
   right: -8px; /* Adjust position */
@@ -8263,53 +8263,24 @@ p {
   transform: scale(1.05);
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 994px) {
   .logo {
     width: 150px;
   }
   .registered-symbol {
-    font-size: 14px;
-    top: 2px;
-    right: 2px;
+    font-size: 16px;
+    top: -5px;
+    right: -5px;
   }
   .logo-text {
-    font-size: 20px;
+    font-size: 22px;
   }
   .logo-subtitle {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .logo {
-    width: 120px;
-  }
-  .registered-symbol {
-    font-size: 12px;
-  }
-  .logo-text {
-    font-size: 18px;
-  }
-  .logo-subtitle {
-    font-size: 10px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .logo {
-    width: 100px;
-  }
-  .registered-symbol {
-    font-size: 10px;
-  }
-  .logo-text {
-    font-size: 16px;
-  }
-  .logo-subtitle {
-    font-size: 9px;
-  }
-}
-@media (max-width: 768px) {
   .navbar-brand {
     flex-direction: row; /* Stack image & text on smaller screens */
     gap: 5px; /* Reduce spacing */
@@ -8321,24 +8292,29 @@ p {
   }
 
   .logo-text {
-    font-size: 20px; /* Adjust font size */
+    font-size: 18px; /* Adjust font size */
   }
 
   .logo-subtitle {
     font-size: 12px;
   }
+  .registered-symbol {
+    font-size: 14px;
+    top: -8px;
+    right: -6px;
+  }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .navbar-brand {
     flex-direction: row;
     text-align: left;
   }
 
   .navbar-brand img {
-    margin-left:13px;
+    margin-left: 13px;
     /* padding-left: 2px; */
-    max-width: 40px; /* Smaller logo for mobile screens */
+    max-width: 40x; /* Smaller logo for mobile screens */
   }
 
   .logo-text {
@@ -8438,10 +8414,4 @@ p {
     width: 100px; /* Adjust logo size */
     height: auto;
   }
-  
- 
-
-  
-
-  
 }
