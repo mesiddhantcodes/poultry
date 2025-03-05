@@ -79,9 +79,6 @@ const Home = () => {
             ))}
           </Swiper>
         </div>
-        <header className="bg-light py-3 text-center shadow-sm">
-        <Logo />
-        </header>
         <div
           className="about-style-one-area default-padding"
           style={{ background: 'url("/assets/images/7583.jpg")' }}
