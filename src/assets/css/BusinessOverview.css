@@ -40,12 +40,27 @@
   color: #555;
   line-height: 1.5;
 }
+
 .business-overview .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  gap: 0px;
 }
-/* Responsive Design */
+
+@media (max-width: 1200px) {
+  .business-overview .row {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .business-overview .row {
+    gap: 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .business-card {
     margin-bottom: 20px;
