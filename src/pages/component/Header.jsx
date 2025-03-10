@@ -112,9 +112,9 @@ const Header = () => {
                     Products
                   </Link>
                   <ul className={`dropdown-menu ${dropdownOpen === "products" ? "show" : ""}`}>
-                    <li><Link to="/layer-feed" className="textt" onClick={toggleMenu}>Layer Feed</Link></li>
-                    <li><Link to="/broiler-feed" className="textt" onClick={toggleMenu}>Broiler Feed</Link></li>
-                    <li><Link to="/breeder-feed" className="textt" onClick={toggleMenu}>Breeder Feed</Link></li>
+                    <li><Link to="/layer-feed" className="textt">Layer Feed</Link></li>
+                    <li><Link to="/broiler-feed" className="textt" >Broiler Feed</Link></li>
+                    <li><Link to="/breeder-feed" className="textt" >Breeder Feed</Link></li>
                   </ul>
                 </li>
 
@@ -124,14 +124,14 @@ const Header = () => {
                     Divisions
                   </Link>
                   <ul className={`dropdown-menu ${dropdownOpen === "divisions" ? "show" : ""}`}>
-                    <li><Link to="/poultry-division" className="textt" onClick={toggleMenu}>Poultry Division</Link></li>
-                    <li><Link to="https://shivgangapashuaahar.com/index.php" className="textt" onClick={toggleMenu}>Cattle Division</Link></li>
-                    <li><Link to="/integration" className="textt" onClick={toggleMenu}>Integration Division</Link></li>
+                    <li><Link to="/poultry-division" className="textt">Poultry Division</Link></li>
+                    <li><Link to="https://shivgangapashuaahar.com/index.php" className="textt" >Cattle Division</Link></li>
+                    <li><Link to="/integration" className="textt" >Integration Division</Link></li>
                   </ul>
                 </li>
 
-                <li><Link to="/gallery" className="textt" onClick={toggleMenu}>Gallery</Link></li>
-                <li><Link to="/contact" className="textt" onClick={toggleMenu}>Contact</Link></li>
+                <li><Link to="/gallery" className="textt" >Gallery</Link></li>
+                <li><Link to="/contact" className="textt" >Contact</Link></li>
               </ul>
             </div>
 
