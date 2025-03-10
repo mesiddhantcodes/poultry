@@ -1,18 +1,23 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "./Logo";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(null);
+  const location = useLocation();
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
 
   const toggleDropdown = (menu) => {
     setDropdownOpen(dropdownOpen === menu ? null : menu);
   };
+
+  // Close menu and dropdown on route change
+  useEffect(() => {
+    setMenuOpen(false);
+    setDropdownOpen(null);
+  }, [location.pathname]);
 
   return (
     <>
@@ -20,8 +25,8 @@ const Header = () => {
         <div className="container">
           <div className="row align-center">
             <div className="col-lg-9">
-              <div className="flex-item left">
-                <p className="more101">Hariom Feeds Pvt. Ltd. </p>
+              <div className="flex-item left lead22">
+                <p className="more101 lead22">Hariom Feeds Pvt. Ltd. </p>
                 <ul>
                   <li>
                     <i className="fas fa-map-marker-alt" /> Gopalganj, Bihar
@@ -78,60 +83,56 @@ const Header = () => {
                 </div>
                 <Logo />
               </a>
-
             </div>
 
             {/* Main Navigation */}
-            <div className={`main-nav-content ${menuOpen ? "show-menu" : ""}`}>
+            <div className={`main-nav-content ${menuOpen ? "show-menu" : ""}`} key={location.pathname}>
               <button type="button" className="navbar-toggle close-btn" onClick={toggleMenu}>
                 <i className="fas fa-times" />
               </button>
               <ul className="nav navbar-nav navbar-right">
-                <li><Link to="/" onClick={toggleMenu} className="textt">Home</Link></li>
+                <li><Link to="/" onClick={() => { toggleMenu(); setDropdownOpen(null); }}>Home</Link></li>
 
                 {/* About Us Dropdown */}
-                {/* <li className="dropdown">
-
-                </li> */}
-
                 <li className="dropdown">
-                  <Link to="#" className="dropdown-toggle textt" onClick={() => toggleDropdown("about")}>
+                  <Link to="#" className="dropdown-toggle" onClick={() => toggleDropdown("about")}>
                     About Us
                   </Link>
                   <ul className={`dropdown-menu ${dropdownOpen === "about" ? "show" : ""}`}>
-                    <li><Link to="/about" className="textt">About Us</Link></li>
-                    <li><Link to="/director" className="textt">Directors Desk</Link></li>
-                    <li><Link to="/journey" className="textt" >Our Journey</Link></li>
-                    <li><Link to="/mission" className="textt">Vision & Mission</Link></li>
-                    <li><Link to="/why-choose-us" className="textt" >Why Choose Us</Link></li>
+                    <li><Link to="/about" onClick={() => { toggleMenu(); setDropdownOpen(null); }}>About Us</Link></li>
+                    <li><Link to="/director" onClick={() => { toggleMenu(); setDropdownOpen(null); }}>Directors Desk</Link></li>
+                    <li><Link to="/journey" onClick={() => { toggleMenu(); setDropdownOpen(null); }}>Our Journey</Link></li>
+                    <li><Link to="/mission" onClick={() => { toggleMenu(); setDropdownOpen(null); }}>Vision & Mission</Link></li>
+                    <li><Link to="/why-choose-us" onClick={() => { toggleMenu(); setDropdownOpen(null); }}>Why Choose Us</Link></li>
                   </ul>
                 </li>
+
                 {/* Products Dropdown */}
                 <li className="dropdown">
-                  <Link to="#" className="dropdown-toggle textt" onClick={() => toggleDropdown("products")}>
+                  <Link to="#" className="dropdown-toggle" onClick={() => toggleDropdown("products")}>
                     Products
                   </Link>
                   <ul className={`dropdown-menu ${dropdownOpen === "products" ? "show" : ""}`}>
-                    <li><Link to="/layer-feed" className="textt">Layer Feed</Link></li>
-                    <li><Link to="/broiler-feed" className="textt" >Broiler Feed</Link></li>
-                    <li><Link to="/breeder-feed" className="textt" >Breeder Feed</Link></li>
+                    <li><Link to="/layer-feed" onClick={() => { toggleMenu(); setDropdownOpen(null); }}>Layer Feed</Link></li>
+                    <li><Link to="/broiler-feed" onClick={() => { toggleMenu(); setDropdownOpen(null); }}>Broiler Feed</Link></li>
+                    <li><Link to="/breeder-feed" onClick={() => { toggleMenu(); setDropdownOpen(null); }}>Breeder Feed</Link></li>
                   </ul>
                 </li>
 
                 {/* Divisions Dropdown */}
                 <li className="dropdown">
-                  <Link to="#" className="dropdown-toggle textt" onClick={() => toggleDropdown("divisions")}>
+                  <Link to="#" className="dropdown-toggle" onClick={() => toggleDropdown("divisions")}>
                     Divisions
                   </Link>
                   <ul className={`dropdown-menu ${dropdownOpen === "divisions" ? "show" : ""}`}>
-                    <li><Link to="/poultry-division" className="textt">Poultry Division</Link></li>
-                    <li><Link to="https://shivgangapashuaahar.com/index.php" className="textt" >Cattle Division</Link></li>
-                    <li><Link to="/integration" className="textt" >Integration Division</Link></li>
+                    <li><Link to="/poultry-division" onClick={() => { toggleMenu(); setDropdownOpen(null); }}>Poultry Division</Link></li>
+                    <li><Link to="https://shivgangapashuaahar.com/index.php" onClick={() => { toggleMenu(); setDropdownOpen(null); }}>Cattle Division</Link></li>
+                    <li><Link to="/integration" onClick={() => { toggleMenu(); setDropdownOpen(null); }}>Integration Division</Link></li>
                   </ul>
                 </li>
 
-                <li><Link to="/gallery" className="textt" >Gallery</Link></li>
-                <li><Link to="/contact" className="textt" >Contact</Link></li>
+                <li><Link to="/gallery" onClick={() => { toggleMenu(); setDropdownOpen(null); }}>Gallery</Link></li>
+                <li><Link to="/contact" onClick={() => { toggleMenu(); setDropdownOpen(null); }}>Contact</Link></li>
               </ul>
             </div>
 
@@ -140,9 +141,6 @@ const Header = () => {
           </div>
         </nav>
       </header>
-
-      {/* Custom CSS */}
-
     </>
   );
 };

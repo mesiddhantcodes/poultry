@@ -1,12 +1,10 @@
-import React from "react";
-import Header from "./component/Header";
-import Footer from "./component/Footer";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Gallery from "./component/Gallery";
-import Logo from "./component/Logo";
+// import Logo from "./component/Logo";
 // import "./styles.css"; // Import your styles
 
 const Home = () => {
@@ -83,111 +81,170 @@ const Home = () => {
           className="about-style-one-area default-padding"
           style={{ background: 'url("/assets/images/7583.jpg")' }}
         >
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-12 col-lg-12 about-style-one">
-                <div className="card">
-                  <div className="row">
-                    <div className="col-lg-8 offset-lg-2">
-                      <div className="site-heading text-center">
-                        <h5 className="sub-title" />
-                        <h2 className="title">Hariom Feeds Private Limited </h2>
-                        <div className="" />
-                      </div>
-                    </div>
-                  </div>{" "}
-                  <p align="justify">
-                    Hariom Feeds Pvt. Ltd., founded in 2003 by Mr. Dilip Kumar
-                    Singh in Gopalganj, Bihar, has grown into a leading producer
-                    of high-quality cattle and poultry feeds in India, producing
-                    250 MT daily. With a strong presence in 03 states, a network
-                    of 500 dealers, and over 500 employees, the company offers a
-                    diverse range of feeds and integrated broiler farming.
-                    Equipped with modern technology and in-house R&D labs,
-                    Hariom Feeds is the preferred choice for farmers and major
-                    companies. Our motto: "Grow Poultry & Farmer for a Happy
-                    India."{" "}
-                    <span className="d-none d-sm-block">
-                      Today Hariom Feeds Pvt. Ltd. Group In Poultry Sector
-                      Requirement of More Than 03 States of India With A Network
-                      of 500 Dealers And More Than 500 Numbers of Employees,
-                      Hariom Feeds Pvt. Ltd. Has Developed Research &amp;
-                      Development Wing With In-House Laboratories. Our Staff And
-                      Employees Have Extensive Industry Experience And Are
-                      Committed To Maintain And Enhance The Quality And Variety
-                      of Its Animal Feed &amp; Livestock Products. Within A
-                      Short Span of Time, Hariom Feeds Pvt. Ltd. Has Become The
-                      Preferred Choice For Farmers In Broiler, Layer, Cattle
-                      Feeds, We Are The India's Leading Processing Company For
-                      Poultry &amp; Cattle Feeds Catering To The Needs of
-                      Various Big Companies.
-                    </span>
-                  </p>
-                  <ul className="check-solid-list mt-20">
-                    <li>An ISO 9001:2015 Certified Company</li>
-                    <li>Use of Modern Technology</li>
-                    <li>Strict Quality Control</li>
-                    <li>Experienced Team</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="services-style-one-area default-padding bg-gray half-bg-theme">
-          <div className="shape-extra">
-            <img src="/assets/images/" alt="Image Not Found" />
-          </div>
-          <div className="container">
-            <div className="heading-left">
-              <div className="row">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-lg-8 offset-lg-2">
-                      <div className="site-heading text-center">
-                        <h5 className="sub-title" />
-                        <h2 className="title">Our Products</h2>
-                        <div className="devider" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-6 offset-lg-1">
-                  <div className="right-info">
-                    <p />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="container">
+          <div className="container py-5">
             <div className="row justify-content-center">
-              {/* item */}
-              <div className="col-md-4 text-center">
-                <div className="b1">
-                  <img src="/assets/images/feeder.png" alt="Breeder" />
-                  <h3 className="sub-title ">Breeder</h3>
-                </div>
-              </div>
-              {/* item */}
-              <div className="col-md-4 text-center">
-                <div className="b1">
-                  <img src="/assets/images/Layer2.png" alt="Layer" />
-                  <h3 className="sub-title ">Layer</h3>
-                </div>
-              </div>
-              {/* item */}
-              <div className="col-md-4 text-center">
-                <div className="b1">
-                  <img src="/assets/images/boiler.png" alt="Broiler" />
-                  <h3 className="sub-title ">Broiler</h3>
+              <div className="col-xl-10 col-lg-12">
+                <div className="card shadow-lg border-0 p-4">
+                  <div className="row">
+                    <div className="col-lg-8 offset-lg-2 text-center">
+                      <div className="site-heading">
+
+                        <h2 className="title fw-bold  mb-4">
+                          Hariom Feeds Private Limited
+                        </h2>
+                        <div className="divider mx-auto mb-4" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <p className="text-justify text-muted lead">
+                    <strong>Hariom Feeds Pvt. Ltd.</strong>, founded in 2003 by{" "}
+                    <strong>Mr. Dilip Kumar Singh</strong> in Gopalganj, Bihar, has grown
+                    into a leading producer of high-quality cattle and poultry feeds in
+                    India. With a production capacity of <strong>250 MT daily</strong>, we
+                    serve <strong>three states</strong> with a network of{" "}
+                    <strong>500 dealers</strong> and employ more than{" "}
+                    <strong>500 dedicated professionals</strong>.
+                  </p>
+
+                  <p className="text-justify text-muted lead">
+                    We offer a diverse range of feeds and integrated broiler farming,
+                    leveraging modern technology and in-house R&D labs. Our commitment to
+                    innovation and quality makes <strong>Hariom Feeds</strong> the
+                    preferred choice for farmers and leading poultry businesses across
+                    India.
+                  </p>
+
+                  <div className="bg-light p-4 rounded">
+                    <h4 className="text-center text-primary fw-bold mb-3">
+                      Why Choose Us?
+                    </h4>
+                    <ul className="list-unstyled check-solid-list">
+                      <li className="mb-2">
+                        <strong>An ISO 9001:2015 Certified Company</strong>
+                      </li>
+                      <li className="mb-2">
+                        <strong>Cutting-Edge Modern Technology</strong>
+                      </li>
+                      <li className="mb-2">
+                        <strong>Stringent Quality Control Measures</strong>
+                      </li>
+                      <li><strong>Highly Experienced & Skilled Team</strong></li>
+                    </ul>
+                  </div>
+
+                  <p className="text-center text-dark fw-bold mt-4">
+                    <em>
+                      "Grow Poultry & Farmers for a Happy India" - Our Commitment to
+                      Excellence!
+                    </em>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
 
         </div>
+
+        <div className="services-style-one-area position-relative py-5"
+          style={{
+            background: "var(--bg-gray)",
+            color: "var(--color-text)"
+          }}>
+
+          {/* Section Header */}
+          <div className="container text-center">
+            {/* <h5 className="fw-bold lead22"
+              style={{
+                color: "var(--color-secondary)",
+                letterSpacing: "1px",
+                textTransform: "uppercase"
+              }}>
+              Premium Quality Feeds
+            </h5> */}
+            <div className="site-heading text-center">
+              {/* <h5 className="sub-title">Awesome Gallery</h5> */}
+              <h2 className="title">              Our Exclusive Products
+              </h2>
+              <div className="devider" />
+            </div>
+
+            <p className="lead">
+              High-performance feeds for the best poultry and livestock growth.
+            </p>
+          </div>
+
+
+          {/* Product Section */}
+          <div className="container mt-5">
+            <div className="row justify-content-center">
+              {[
+                { img: "/assets/images/feeder.png", name: "Breeder", info: "Specially formulated breeder feed for strong and healthy livestock.", link: "/breeder-feed" },
+                { img: "/assets/images/Layer2.png", name: "Layer", info: "Optimized layer feed for enhanced egg production and quality.", link: "/layer-feed" },
+                { img: "/assets/images/boiler.png", name: "Broiler", info: "High-protein broiler feed for superior weight gain and efficiency.", link: "/broiler-feed" }
+              ].map((product, index) => (
+                <div key={index} className="col-md-4 mb-4">
+                  <div className="product-card text-center shadow p-4 position-relative"
+                    style={{
+                      background: "var(--white)",
+                      borderRadius: "8px",
+                      boxShadow: "var(--box-shadow-primary)",
+                      transition: "transform 0.3s ease-in-out"
+                    }}
+                    onMouseEnter={(e) => e.currentTarget.style.transform = "translateY(-5px)"}
+                    onMouseLeave={(e) => e.currentTarget.style.transform = "translateY(0)"}
+                  >
+                    {/* Product Image */}
+                    <div className="product-image ">
+                      <img
+                        src={product.img}
+                        alt={product.name}
+                        className="img-fluid"
+                        style={{
+                          maxWidth: "180px",
+                          filter: "drop-shadow(12px 10px 6px rgba(0, 0, 0, 0.4))"
+                        }}
+                      />
+                    </div>
+
+                    {/* Product Title */}
+                    <h3 className="fw-bold lead "
+                      style={{
+                        fontFamily: "var(--font-secondary)",
+                        fontSize:"1.4rem"
+                        // color: "var(--color-heading)",
+                      }}>
+                      {product.name}
+                    </h3>
+
+                    {/* Product Description */}
+
+
+                    {/* More Info Button with Link */}
+                    <a href={product.link} className="btn btn-lg mt-3"
+                      style={{
+                        background: "var(--color-primary)",
+                        color: "var(--white)",
+                        border: "none",
+                        borderRadius: "6px",
+                        padding: "10px 20px",
+                        transition: "background 0.3s ease-in-out",
+                        boxShadow: "var(--box-shadow-secondary)",
+                        textDecoration: "none"
+                      }}
+                      onMouseEnter={(e) => e.currentTarget.style.background = "var(--color-secondary)"}
+                      onMouseLeave={(e) => e.currentTarget.style.background = "var(--color-primary)"}>
+                      More Info
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+        </div>
+
+
 
         <div className="choose-us-style-two-area half-bg-light bg-gray default-padding">
           <div className="container">
