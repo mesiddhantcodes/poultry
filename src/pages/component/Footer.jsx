@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "./Logo";
 
 const Footer = () => {
@@ -33,16 +34,16 @@ const Footer = () => {
                 <h4 className="widget-title">Explore</h4>
                 <ul>
                   <li>
-                    <a href="./">Home</a>
+                    <Link to="./">Home</Link>
                   </li>
                   <li>
-                    <a href="./About.jsx">About Us</a>
+                    <Link to="/about">About Us</Link>
                   </li>
                   <li>
-                    <a href=""> Vision &amp; Mission</a>
+                    <Link to="/mission"> Vision &amp; Mission</Link>
                   </li>
                   <li>
-                    <a href="">Contact Us</a>
+                    <Link to="/contact">Contact Us</Link>
                   </li>
                 </ul>
               </div>
@@ -54,13 +55,14 @@ const Footer = () => {
                 <h4 className="widget-title">Products</h4>
                 <ul>
                   <li>
-                    <a href="hariom-Layer.php">Layer Feed</a>
+                    <Link to="/layer-feed">Layer Feed</Link>
                   </li>
                   <li>
-                    <a href="hariom-Broiler.php">Broiler Feed </a>
+                    <Link to="/broiler-feed">Broiler Feed </Link>
                   </li>
                   <li>
-                    <a href="hariom-Breeder.php">Breeder Feed</a>
+                    <Link to="/breeder-feed">Breeder Feed </Link>
+
                   </li>
                 </ul>
               </div>

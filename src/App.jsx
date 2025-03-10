@@ -21,10 +21,12 @@ import BroilerProduct from "./pages/BroilerProduct";
 import BreederProduct from "./pages/BreederProduct";
 import ContactForm from "./pages/ContactForm";
 import GalleryPage from "./pages/GalleryPage";
+import ScrollToTop from "./pages/component/ScrollToTop";
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop/>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
