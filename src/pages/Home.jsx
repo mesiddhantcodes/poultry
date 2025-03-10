@@ -227,12 +227,15 @@ const Home = () => {
                       <img
                         src={product.img}
                         alt={product.name}
-                        className="img-fluid"
+                        className="img-fluid product-img" /* Add a class for CSS control */
                         style={{
-                          maxWidth: "180px",
-                          filter: "drop-shadow(12px 10px 6px rgba(0, 0, 0, 0.4))"
+                          width: "100%", /* Ensures the image scales proportionally */
+                          maxWidth: "620px", /* Set max width for larger screens */
+                          filter: "drop-shadow(12px 10px 6px rgba(0, 0, 0, 0.4))",
+                          transition: "all 0.3s ease-in-out"
                         }}
                       />
+
                     </div>
 
                     {/* Product Title */}

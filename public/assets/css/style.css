@@ -8346,17 +8346,33 @@ p {
 }
 
 .footer-logo-wrapper {
-  transform: scale(0.9) translateX(-35px); /* Moves left by 10px */
+  transform: scale(0.9) translateX(-35px); 
   display: flex;
-  align-items: center; /* Keep image and text aligned */
+  align-items: center; 
   justify-content: left;
-  /* padding-right: ;  */
 }
 
-/* Adjust for screens smaller than 768px */
 @media (max-width: 768px) {
   .footer-logo-wrapper {
     transform: scale(1); /* Reduce scale and adjust left position */
     justify-content: center; /* Center it on smaller screens */
   }
 }
+
+.product-img {
+  max-width: 220px;
+}
+
+@media (max-width: 992px) { /* Tablet */
+  .product-img {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 768px) { /* Mobile */
+  .product-img {
+    max-width: 150px;
+  }
+}
+
+
