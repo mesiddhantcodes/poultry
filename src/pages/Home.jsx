@@ -3,12 +3,40 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import { FaGlobe, FaTachometerAlt, FaDribbble, FaFile } from "react-icons/fa";
+// import "./public/assets/css/BuisnessOverview.css";
 import Gallery from "./component/Gallery";
-// import Logo from "./component/Logo";
+import "../assets/css/BusinessOverview.css";
 // import "./styles.css"; // Import your styles
 
 const Home = () => {
   const BannerSlider = () => {
+    const businessData = [
+      {
+        icon: <FaGlobe />,
+        title: "FEED MILL",
+        description:
+          "Hariom Group is the leading commercial Poultry Feed and Cattle Feed company in India comprising 3 Feed Mills with advanced technology.",
+      },
+      {
+        icon: <FaTachometerAlt />,
+        title: "CONTRACT FARMING",
+        description:
+          "Over more than 1000 partner farmers provided with global technological support for both open and closed houses, PAN India.",
+      },
+      {
+        icon: <FaDribbble />,
+        title: "PARENT FARM",
+        description:
+          "Our state-of-the-art Parent Farms have best-in-class biosecurity and are built as per global standards.",
+      },
+      {
+        icon: <FaFile />,
+        title: "HATCHERY",
+        description:
+          "Strict processes ensure only the finest quality DOCs are produced at our state-of-the-art hatcheries adhering to global standards.",
+      },
+    ];
     const slides = [
       {
         image: "/assets/images/slideHF2.jpg",
@@ -211,7 +239,7 @@ const Home = () => {
                     <h3 className="fw-bold lead "
                       style={{
                         fontFamily: "var(--font-secondary)",
-                        fontSize:"1.4rem"
+                        fontSize: "1.4rem"
                         // color: "var(--color-heading)",
                       }}>
                       {product.name}
@@ -291,126 +319,19 @@ const Home = () => {
 
 
 
-        <section
-          className="w3l-features-4 py-5   "
-          style={{ background: "linear-gradient(135deg, #ff9a8b, #ff6a88)" }}
-        >
-          <div className="container pb-lg-5 pb-md-4 pb-3">
-            <h3
-              className="title-big mb-md-5 mb-4 mw-100 text-center"
-              style={{
-                fontFamily: '"Roboto", sans-serif',
-                fontWeight: "bold",
-                fontSize: 36,
-                color: "white",
-              }}
-            >
-              Business Overview Our Company
-            </h3>
-            <div className="row features4-grids">
-              <div className="col-xl-3 col-sm-6 mt-xl-0 mt-4">
-                <div
-                  className="features4-grid"
-                  style={{
-                    backgroundColor: "white",
-                    borderRadius: 10,
-                    boxShadow: "0 4px 15px rgba(0,0,0,0.2)",
-                    padding: 20,
-                    transition: "transform 0.3s",
-                  }}
-                >
-                  <div
-                    className="feature-images"
-                    style={{ fontSize: 50, color: "#ff6a88", marginBottom: 15 }}
-                  >
-                    <span className="fa fa-globe" aria-hidden="true" />
+        <section className="business-overview">
+          <div className="container">
+            <h2 className="title text-center mb-50">Business Overview of Our Company</h2>
+            <div className="row">
+              {businessData.map((item, index) => (
+                <div className="col-xl-3 col-md-6 d-flex" key={index}>
+                  <div className="business-card">
+                    <div className="icon">{item.icon}</div>
+                    <h5>{item.title}</h5>
+                    <p>{item.description}</p>
                   </div>
-                  <h5 style={{ fontSize: 22, color: "#2c3e50" }}>FEED MILL</h5>
-                  <p style={{ color: "#7f8c8d", fontSize: 16 }}>
-                    Hariom group is the leading commercial Poultry Feed and
-                    cattle Feed company in India comprising 3 Feed Mills with
-                    advanced technology.
-                  </p>
                 </div>
-              </div>
-              <div className="col-xl-3 col-sm-6 mt-xl-0 mt-4">
-                <div
-                  className="features4-grid"
-                  style={{
-                    backgroundColor: "white",
-                    borderRadius: 10,
-                    boxShadow: "0 4px 15px rgba(0,0,0,0.2)",
-                    padding: 20,
-                    transition: "transform 0.3s",
-                  }}
-                >
-                  <div
-                    className="feature-images"
-                    style={{ fontSize: 50, color: "#ff6a88", marginBottom: 15 }}
-                  >
-                    <span className="fa fa-tachometer" aria-hidden="true" />
-                  </div>
-                  <h5 style={{ fontSize: 22, color: "#2c3e50" }}>
-                    CONTRACT FARMING
-                  </h5>
-                  <p style={{ color: "#7f8c8d", fontSize: 16 }}>
-                    Over more than 1000 partner farmers provided with global
-                    technological support for both open and closed houses, PAN
-                    India.
-                  </p>
-                </div>
-              </div>
-              <div className="col-xl-3 col-sm-6 mt-xl-0 mt-4">
-                <div
-                  className="features4-grid"
-                  style={{
-                    backgroundColor: "white",
-                    borderRadius: 10,
-                    boxShadow: "0 4px 15px rgba(0,0,0,0.2)",
-                    padding: 20,
-                    transition: "transform 0.3s",
-                  }}
-                >
-                  <div
-                    className="feature-images"
-                    style={{ fontSize: 50, color: "#ff6a88", marginBottom: 15 }}
-                  >
-                    <span className="fa fa-dribbble" aria-hidden="true" />
-                  </div>
-                  <h5 style={{ fontSize: 22, color: "#2c3e50" }}>
-                    PARENT FARM
-                  </h5>
-                  <p style={{ color: "#7f8c8d", fontSize: 16 }}>
-                    Our state of the art Parent Farms have best in class Bio
-                    security and is built as per global standards.
-                  </p>
-                </div>
-              </div>
-              <div className="col-xl-3 col-sm-6 mt-xl-0 mt-4">
-                <div
-                  className="features4-grid"
-                  style={{
-                    backgroundColor: "white",
-                    borderRadius: 10,
-                    boxShadow: "0 4px 15px rgba(0,0,0,0.2)",
-                    padding: 20,
-                    transition: "transform 0.3s",
-                  }}
-                >
-                  <div
-                    className="feature-images"
-                    style={{ fontSize: 50, color: "#ff6a88", marginBottom: 15 }}
-                  >
-                    <span className="fa fa-file" aria-hidden="true" />
-                  </div>
-                  <h5 style={{ fontSize: 22, color: "#2c3e50" }}>HATCHERY</h5>
-                  <p style={{ color: "#7f8c8d", fontSize: 16 }}>
-                    Strict Processes ensure only finest quality DOC's are
-                    produced at our state of the art hatcheries adhering to
-                    global standards.
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>

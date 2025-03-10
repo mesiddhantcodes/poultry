@@ -2760,3 +2760,8 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
     border: none;
   }
 }
+.footer-logo {
+  position: relative;
+  width: 100%;
+  top: -40px;
+}

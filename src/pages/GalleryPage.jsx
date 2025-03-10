@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Pagination, Navigation,Autoplay } from "swiper/modules";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import galleryImages from "../data/galleryImages";
@@ -21,7 +21,7 @@ const GalleryPage = () => {
 
             {/* Gallery Slider with Lightbox Feature */}
             <div className="gallery-slider">
-            <Swiper
+                <Swiper
                     slidesPerView={3}
                     spaceBetween={20}
                     pagination={{ clickable: true }}
@@ -30,9 +30,9 @@ const GalleryPage = () => {
                         delay: 2500,
                         disableOnInteraction: false,
                     }}
-                    modules={[Pagination, Autoplay]}
+                    modules={[Pagination, Navigation, Autoplay]}
                 >
-               
+
                     {galleryImages.map((item, index) => (
                         <SwiperSlide key={index}>
                             <div className="gallery-item" onClick={() => {

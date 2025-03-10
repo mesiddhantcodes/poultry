@@ -77,10 +77,10 @@ const Header = () => {
                 <i className="fa fa-bars" />
               </button>
               <a className="navbar-brand d-flex align-items-center" href="/">
-                <div className="logo-wrapper">
+                {/* <div className="logo-wrapper">
                   <img src="assets/images/logo1.png" className="logo" alt="Hariom Feeds Pvt. Ltd." />
                   <span className="registered-symbol">®</span>
-                </div>
+                </div> */}
                 <Logo />
               </a>
             </div>

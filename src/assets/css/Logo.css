@@ -1,0 +1,139 @@
+.logo-container {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  position: relative;
+}
+
+/* Main logo text */
+.logo-text {
+  font-family: "Georgia", serif;
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #7a0c0c, #c62828);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  letter-spacing: 1.5px;
+  position: relative;
+  display: inline-block;
+  /* padding-right: 20px; */
+}
+/* Logo Wrapper */
+.logo-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Logo Image */
+.logo {
+  width: 150px; /* Adjust as needed */
+  height: auto;
+}
+
+/* Registered Symbol (®) */
+.registered-symbol {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00a5fe; /* Red color */
+  position: absolute;
+  top: -15px; /* Adjust position */
+  right: -8px; /* Adjust position */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect */
+.logo-text:hover {
+  transform: scale(1.07);
+  text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Subtitle text */
+.logo-subtitle {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #007b00; /* Green */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-style: italic;
+  margin-top: -7px;
+  padding: 5px 12px;
+  border-radius: 5px;
+  background-color: rgba(0, 123, 0, 0.1);
+  display: inline-block;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.logo-subtitle:hover {
+  background-color: rgba(0, 123, 0, 0.2);
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 994px) {
+  .logo {
+    width: 150px;
+  }
+  .registered-symbol {
+    font-size: 16px;
+    top: -5px;
+    right: -5px;
+  }
+  .logo-text {
+    font-size: 22px;
+  }
+  .logo-subtitle {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    flex-direction: row; /* Stack image & text on smaller screens */
+    gap: 5px; /* Reduce spacing */
+    text-align: left;
+  }
+
+  .navbar-brand img {
+    max-width: 60px; /* Smaller logo for small screens */
+  }
+
+  .logo-text {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .logo-subtitle {
+    font-size: 12px;
+  }
+  .registered-symbol {
+    font-size: 14px;
+    top: -8px;
+    right: -6px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-brand {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .navbar-brand img {
+    margin-left: 13px;
+    /* padding-left: 2px; */
+    max-width: 40x; /* Smaller logo for mobile screens */
+  }
+
+  .logo-text {
+    font-size: 12px;
+  }
+
+  .logo-subtitle {
+    font-size: 9px;
+  }
+  .registered-symbol {
+    font-size: 14px;
+    top: -8px;
+    right: -6px;
+  }
+}

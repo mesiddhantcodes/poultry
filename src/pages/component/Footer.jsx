@@ -1,4 +1,6 @@
 import React from "react";
+import Logo from "./Logo";
+import "../../assets/css/Footer.css";
 
 const Footer = () => {
   return (
@@ -7,16 +9,21 @@ const Footer = () => {
         <div className="f-items default-padding">
           <div className="row">
             {/* Single Itme */}
-            <div className="col-lg-4 col-md-6 item">
+            <div className="col-lg-4 col-md-6 item ">
               <div className="footer-item about">
-                <img
-                  className="logo"
-                  src="/assets/images/logo.png"
-                  alt="Hariom Feeds India Pvt. Ltd."
-                />
-                <p align ="">
+                <div className="footer-logo">
+                  <a className="navbar-brand d-flex align-items-center" href="/">
+                    <div className="footer-logo-wrapper ">
+                      <Logo />
+                    </div>
+                  </a>
+
+
+                </div>
+
+                <p align="">
                   Hariom Feeds Pvt.Ltd. is a feed manufacturing company
-                   producing compounded poultry feed, catering to the animal
+                  producing compounded poultry feed, catering to the animal
                   health and nutrition industry
                 </p>
               </div>
