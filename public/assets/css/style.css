@@ -8419,22 +8419,21 @@ p {
 .image-frame {
   position: relative;
   display: inline-block;
-  padding: 10px; /* Space inside the frame */
-  background: var(--white); /* White frame background */
+  padding: 10px;
+  background: var(--white); 
   border: 5px solid var( --color-heading); 
-  border-radius: 15px; /* Smooth edges */
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8); /* Soft shadow */
+  border-radius: 12px; 
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.8); 
   transition: transform 0.3s ease-in-out;
 }
 
 .image-frame img {
   display: block;
   width: 100%;
-  border-radius: 10px; /* Match frame edges */
+  border-radius: 10px; 
 }
 
-/* 🔹 Hover Effect */
 .image-frame:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
+  transform: scale(1.05); 
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }

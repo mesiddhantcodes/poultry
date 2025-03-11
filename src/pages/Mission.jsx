@@ -35,12 +35,12 @@ const Mission = () => {
                         {/* Vision Section */}
                         <div className="col-xl-7 col-lg-6 about-style-one pr-50">
                             <h2 className="heading">Our Vision</h2>
-                            <p align="justify">                                  
-                            At Hariom feeds Private Limited, we are committed to producing premium poultry feed that meets
-                             the highest nutritional standards.Our goal is to become a trusted reference for 
-                            quality in the poultry industry, ensuring the well-being and growth of poultry for future generations. 
-                            Through teamwork, social responsibility, and innovative practices,we create feed solutions that are both functional
-                            and affordable,helping farmers maximize productivity without incurring extra expenses. 
+                            <p className="global-paragraph" align="justify">
+                                At Hariom feeds Private Limited, we are committed to producing premium poultry feed that meets
+                                the highest nutritional standards.Our goal is to become a trusted reference for
+                                quality in the poultry industry, ensuring the well-being and growth of poultry for future generations.
+                                Through teamwork, social responsibility, and innovative practices,we create feed solutions that are both functional
+                                and affordable,helping farmers maximize productivity without incurring extra expenses.
 
                             </p>
                         </div>
@@ -64,16 +64,16 @@ const Mission = () => {
 
                         <div className="col-xl-7 col-lg-6 about-style-one pl-50 pt-50">
                             <h2 className="heading">Our Mission</h2>
-                            <p align="justify">         
-                            At Hariom Feeds Private Limited, Our mission is to
-                            produce poultry feed of national standards,ensuring consistent quality and delivering unparalleled 
-                            performance benefits to poultry farmers at an affordable price.
+                            <p className="global-paragraph" align="justify">
+                                At Hariom Feeds Private Limited, Our mission is to
+                                produce poultry feed of national standards,ensuring consistent quality and delivering unparalleled
+                                performance benefits to poultry farmers at an affordable price.
                             </p>
-                            <p align="justify">                                   
-                            Since our inception,we have been dedicated to developing superior-quality broiler feed that meets the demands of
-                             modern poultry farming.our unwavering focus on broiler feed has enabled us to achieve exceptional results,particularly with today’s genetically improved broilers. 
-                             By Combining advanced nutrition science,cutting-edge technology, and a deep understanding of poultry needs,we empower farmers to maximize growth,health,and 
-                             profitability in their flocks.
+                            <p className="global-paragraph" align="justify">
+                                Since our inception,we have been dedicated to developing superior-quality broiler feed that meets the demands of
+                                modern poultry farming.our unwavering focus on broiler feed has enabled us to achieve exceptional results,particularly with today’s genetically improved broilers.
+                                By Combining advanced nutrition science,cutting-edge technology, and a deep understanding of poultry needs,we empower farmers to maximize growth,health,and
+                                profitability in their flocks.
 
                             </p>
                         </div>
