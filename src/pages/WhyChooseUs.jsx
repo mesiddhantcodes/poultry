@@ -34,19 +34,20 @@ const WhyChooseUs = () => {
                         {/* Text Content */}
                         <div className="col-xl-7 col-lg-6 about-style-one pr-50">
                             <h2 className="heading">Why Choose Us </h2>
-                            <p align="justify">
-                            From the start, Hariom Feeds Pvt. Ltd. has established a range of values and commitments
-                            that are incorporated into its daily practices, which are showcased in the following aspects :
+                            <p className="global-paragraph" align="justify">
+                                From the start, Hariom Feeds Pvt. Ltd. has established a range of values and commitments
+                                that are incorporated into its daily practices, which are showcased in the following aspects :
                             </p>
-                            <ul className="check-solid-list mt-20">
-                                <li>Customer Service </li>
-                                <li>Sustainability</li>
-                                <li>Quality </li>
-                                <li>Satisfaction </li>
-                                <li>Experience </li>
-                                <li>Reliability </li>
-                                <li>Unity</li>
-                                <li>Dedication to success</li>
+                            <ul className=" custom-list mt-20">
+                                <li><i className="fas fa-check-circle"></i> Customer Service </li>
+                                <li><i className="fas fa-check-circle"></i> Sustainability</li>
+                                <li><i className="fas fa-check-circle"></i> Quality</li>
+                                <li><i className="fas fa-check-circle"></i> Satisfaction</li>
+                                <li><i className="fas fa-check-circle"></i> Experience</li>
+                                <li><i className="fas fa-check-circle"></i> Reliability</li>
+                                <li><i className="fas fa-check-circle"></i> Unity</li>
+                                <li><i className="fas fa-check-circle"></i> Dedication to Success</li>
+
                             </ul>
                         </div>
                         {/* Image Section */}
@@ -54,14 +55,7 @@ const WhyChooseUs = () => {
                             <img
                                 src="assets/images/why.jpeg"
                                 alt="Hariom Feeds"
-                                style={{
-                                    boxShadow:
-                                        "rgba(0, 0, 0, 0.25) 0px 54px 55px, " +
-                                        "rgba(0, 0, 0, 0.12) 0px -12px 30px, " +
-                                        "rgba(0, 0, 0, 0.12) 0px 4px 6px, " +
-                                        "rgba(0, 0, 0, 0.17) 0px 12px 13px, " +
-                                        "rgba(0, 0, 0, 0.09) 0px -3px 5px"
-                                }}
+                                className="why-image"
                             />
                         </div>
                     </div>
