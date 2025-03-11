@@ -29,19 +29,19 @@ const Director = () => {
                     <div className="farmer-content-top">
                         <div className="row">
                             <div className="col-lg-5 left-info">
-                                <div className="thumb">
+                                <div className="thumb about-style-one image-frame">
                                     <img src="public/assets/images/MDSIR.jpg" alt="Thumb" />
                                 </div>
                             </div>
                             <div className="col-lg-7 right-info">
                                 <h2>Mr. Dilip Kumar Singh </h2>
                                 <span>Managing Director</span>
-                                <p align="justify">
+                                <p className="global-paragraph "  align="justify">
                                     Welcome to Hariom Feeds Private Limited where quality, sustainability, and innovation are at the heart of everything we do.
                                     As a leading poultry manufacturer, we take pride in providing premium products that meet the highest standards of safety and excellence.
                                     Our commitment to integrity, sustainability, and customer satisfaction drives us to continually improve and exceed industry standards.
                                 </p>
-                                <p align="justify">
+                                <p className="global-paragraph "  align="justify">
                                     We believe in the power of collaboration, both within our team and with our valued partners.
                                     By harnessing the latest technologies and adhering to ethical practices, we strive to offer products that are not only nutritious but also contribute positively to the communities we serve.
                                     Thank you for your continued trust in Hariom Feeds Private Limited. We are excited about the future and look forward to serving you with the
