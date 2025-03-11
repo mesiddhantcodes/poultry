@@ -200,7 +200,6 @@ const ContactForm = () => {
 
 
                         <Paper
-
                             sx={{
                                 p: 2,
                                 boxShadow: 5,

@@ -7,17 +7,19 @@ const Poultry = () => {
       <div className="container mx-auto px-4">
         <div className="row align-items-center">
           {/* Left Section - Text Content */}
-          <div className="col-12 col-md-6 p-5">
+          <div className="col-12 col-md-6 p-5 site-heading">
             <h2 className="text-2xl font-semibold text-[#0c2957] mb-3">
               Farms-Overview
             </h2>
-            <p className="text-gray-800 text-lg text-justify mb-3" align ="justify">
+            <div className="devider " />
+
+            <p className=" global-paragraph " align="justify">
               Hariom Feeds is a trusted name in meeting your nutritional and protein needs. With over 23 years of excellence,
               Hariom  continues to empower rural parts of Bihar, Jharkhand & Uttar Pradesh, supporting more than 50,000
               livelihoods. Committed to its vision, the company strives to strengthen
               the nation by providing the highest quality protein sources.
             </p>
-            <p className="text-gray-800 text-lg text-justify mb-3" align = "justify">
+            <p className=" global-paragraph " align="justify">
               Over the years, the company has expanded to offer comprehensive support to farmers through integrated farm solutions across Bihar, Jharkhand & Uttar Pradesh.
               With a strong commitment to empowering farmers and partners, Hariom  fosters a meaningful impact in
               their lives while ensuring a steady supply of protein. Driven by this vision, Hariom continues to progress as a
@@ -32,15 +34,17 @@ const Poultry = () => {
           </div>
 
           {/* Right Section - Image */}
-          <div className="col-12 col-md-6 d-flex justify-content-center p-5">
+          <div className="col-12 col-md-6 d-flex justify-content-center p-5 about-style-one">
             <img
-              src="public/assets/images/b1.jpg"
+              src="src/assets/images/b1.jpg"
               alt="Farms Overview"
-              className="w-100 rounded-circle shadow-lg"
+              className="w-100 "
             />
           </div>
-        </div> <div className="sec-title text-center ">
+        </div> <div className="sec-title text-center site-heading ">
           <h2>Our Verticals</h2>
+          <div className="devider " />
+
           <div className="text-decoration ">
             <span className="left "></span>
             <span className="right "></span>

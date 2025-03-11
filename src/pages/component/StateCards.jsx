@@ -3,40 +3,14 @@ import { Link } from "react-router-dom";
 
 const StateCards = () => {
     const cards = [
-        { title: "Bihar", image: "/public/assets/images/Bihar.png", link: "/integration/bihar" },
-        { title: "Jharkhand", image: "/public/assets/images/Jha.png", link: "/integration/jharkhand" },
-        { title: "Uttar Pradesh", image: "/public/assets/images/UPP.png", link: "/integration/uttar-pradesh" },
+        { title: "Bihar", image: "src/assets/images/Bihar.png", link: "/integration/bihar" },
+        { title: "Jharkhand", image: "src/assets/images/Jha.png", link: "/integration/jharkhand" },
+        { title: "Uttar Pradesh", image: "src/assets/images/UPP.png", link: "/integration/uttar-pradesh" },
     ];
 
     const cardStyle = {
         cursor: "pointer",
         transition: "transform 0.3s ease, box-shadow 0.3s ease",
-    };
-
-    const imageStyle = {
-        objectFit: "cover",
-        borderRadius: "15px",
-        transition: "transform 0.3s ease",
-    };
-
-    const overlayStyle = {
-        background: "linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7))",
-        borderRadius: "15px",
-        transition: "opacity 0.3s ease",
-        opacity: 0,
-    };
-
-    const titleStyle = {
-        color: "#fff",
-        fontSize: "1.4rem",
-        fontWeight: "bold",
-        position: "absolute",
-        left: "50%",
-        top: "50%",
-        transform: "translate(-50%, -50%)",
-        opacity: 0,
-        transition: "opacity 0.3s ease",
-        zIndex: 2,
     };
 
     return (
@@ -62,7 +36,7 @@ const StateCards = () => {
                                 if (title) title.style.opacity = 0;
                             }}
                         >
-                            <div
+                            {/* <div
                                 className="image-box position-relative"
                                 style={{ height: "250px", borderRadius: "5px", overflow: "hidden" }}
                             >
@@ -76,7 +50,45 @@ const StateCards = () => {
                                 <h5 className="card-title" style={titleStyle}>
                                     {card.title}
                                 </h5>
+                            </div> */}
+                            <div
+                                className="image-box position-relative"
+                                style={{
+                                    height: "250px",
+                                    borderRadius: "12px",
+                                    overflow: "hidden",
+                                    transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                                }}
+
+                            >
+                                <img
+                                    src={card.image}
+                                    alt={card.title}
+                                    className="img-fluid w-100 h-100"
+                                    style={{
+                                        objectFit: "cover",
+                                        borderRadius: "12px",
+                                        transition: "transform 0.3s ease",
+                                    }}
+                                />
+
+                                <div
+                                    className="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                                    style={{
+                                        background: "rgba(0, 0, 0, 0.4)",
+                                        opacity: 0,
+                                        transition: "opacity 0.3s ease",
+                                        borderRadius: "12px",
+                                    }}
+                                >
+                                    <Link to={card.link} className="btn btn-light global-paragraph">
+                                        {card.title}
+                                    </Link>
+                                </div>
+
+
                             </div>
+
                         </div>
                     </Link>
                 </div>

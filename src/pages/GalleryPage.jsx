@@ -16,7 +16,7 @@ const GalleryPage = () => {
         <div className="gallery-page-container">
             <div className="gallery-header text-center">
                 <h2>Our Product Gallery</h2>
-                <p className="subtitle">Explore our premium products</p>
+                <p className="subtitle global2-paragraph">Explore our premium products</p>
             </div>
 
             {/* Gallery Slider with Lightbox Feature */}
