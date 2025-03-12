@@ -1,12 +1,12 @@
 import React from "react";
 import "../../assets/css/Logo.css";
-
+import logo from "@/assets/images/logo1.png"
 
 const Logo = () => {
   return (
     <>
       <div className="logo-wrapper">
-        <img src="src/assets/images/logo1.png" className="logo" alt="Hariom Feeds Pvt. Ltd." />
+        <img src={logo} className="logo" alt="Hariom Feeds Pvt. Ltd." />
         <span className="registered-symbol">®</span>
       </div>
       <div className="logo-container">
