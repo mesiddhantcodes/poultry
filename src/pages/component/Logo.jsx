@@ -1,7 +1,6 @@
 import React from "react";
 import "../../assets/css/Logo.css";
 import logo from "@/assets/images/logo1.png"
-
 const Logo = () => {
   return (
     <>
