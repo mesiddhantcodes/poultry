@@ -8,11 +8,10 @@ import { FaGlobe, FaTachometerAlt, FaDribbble, FaFile } from "react-icons/fa";
 import Gallery from "./component/Gallery";
 import "../assets/css/BusinessOverview.css";
 import { Link } from "react-router-dom";
-// import slide1 from "@/assets/images/slideHF2.jpg"
-// import slide2 from "@/assets/images/slide2.jpg"
-// import slide3 from "@/assets/images/slide3.jpg"
-// import slide4 from "@/assets/images/SlideHF1.jpg"
-
+import slideHF2 from "@/assets/images/slideHF2.jpg";
+import slide2 from "@/assets/images/slide2.jpg";
+import slide3 from "@/assets/images/slide3.jpg";
+import slideHF1 from "@/assets/images/SlideHF1.jpg";
 const Home = () => {
   const BannerSlider = () => {
     const businessData = [
@@ -43,25 +42,25 @@ const Home = () => {
     ];
     const slides = [
       {
-        image: "@/assets/images/slideHF2.jpg",
+        image: slideHF2,
         title: "Hariom Feeds Pvt. Ltd.",
         subtitle: "Perfect Feed",
         boldText: "Happy Farmer",
       },
       {
-        image: "@/assets/images/slide2.jpg",
+        image: slide2,
         title: "Hariom Feeds Pvt. Ltd.",
         subtitle: "Uncompromising Quality",
         boldText: "Unmatched Results",
       },
       {
-        image: "@/assets/images/slide3.jpg",
+        image: slide3,
         title: "Hariom Feeds Pvt. Ltd.",
         subtitle: "Progress with Purpose",
         boldText: "Passion in Action",
       },
       {
-        image: "@/assets/images/SlideHF1.jpg",
+        image: slideHF1,
         title: "Hariom Feeds Pvt. Ltd.",
         subtitle: "Passion For",
         boldText: "Sustainability",
