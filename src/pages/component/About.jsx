@@ -1,12 +1,13 @@
-
-
+import chicks from "@/assets/images/chikcs.jpg"
+import slider from "@/assets/images/slideHF2.jpg"
+import slider2 from "@/assets/images/slideHF1.jpg"
 const About = () => {
     return (
         <>
             <>
                 <div
                     className="breadcrumb-area text-center shadow dark bg-fixed text-light"
-                    style={{ backgroundImage: "url(src/assets/images/chikcs.jpg)" }}
+                    style={{ backgroundImage: `url(${chicks})` }}
                 >
                     <div className="container">
                         <div className="row">
@@ -59,8 +60,8 @@ const About = () => {
                             </div>
 
                             <div className="col-xl-5 col-lg-6 about-style-one pl-50 pr-md-15 pr-xs-15">
-                                <img src="src/assets/images/SlideHF1.jpg" alt="Hariom Feeds" className="" />
-                                <img src="src/assets/images/slideHF2.jpg" alt="Hariom Feeds" className=" mt-4" />
+                                <img src={slider} alt="Hariom Feeds" className="" />
+                                <img src={slider2} alt="Hariom Feeds" className=" mt-4" />
                             </div>
 
                         </div>

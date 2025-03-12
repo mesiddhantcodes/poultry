@@ -12,6 +12,12 @@ import slideHF2 from "@/assets/images/slideHF2.jpg";
 import slide2 from "@/assets/images/slide2.jpg";
 import slide3 from "@/assets/images/slide3.jpg";
 import slideHF1 from "@/assets/images/SlideHF1.jpg";
+import bg from "@/assets/images/7583.jpg"
+import feed from "@/assets/images/feeder.png"
+import layer from "@/assets/images/Layer2.png"
+import breeder from "@/assets/images/Layer2.png"
+import rt1 from "@/assets/images/rt1.jpg"
+import rt2 from "@/assets/images/rt2.jpg"
 const Home = () => {
   const BannerSlider = () => {
     const businessData = [
@@ -110,7 +116,7 @@ const Home = () => {
         </div>
         <div
           className="about-style-one-area default-padding"
-          style={{ background: 'url("src/assets/images/7583.jpg")' }}
+          style={{ background: `url(${bg})` }}
         >
           <div className="container py-5">
             <div className="row justify-content-center">
@@ -212,9 +218,9 @@ const Home = () => {
           <div className="container mt-5">
             <div className="row justify-content-center">
               {[
-                { img: "src/assets/images/feeder.png", name: "Breeder", info: "Specially formulated breeder feed for strong and healthy livestock.", link: "/breeder-feed" },
-                { img: "src/assets/images/Layer2.png", name: "Layer", info: "Optimized layer feed for enhanced egg production and quality.", link: "/layer-feed" },
-                { img: "src/assets/images/boiler.png", name: "Broiler", info: "High-protein broiler feed for superior weight gain and efficiency.", link: "/broiler-feed" }
+                { img: feed, name: "Breeder", info: "Specially formulated breeder feed for strong and healthy livestock.", link: "/breeder-feed" },
+                { img: layer, name: "Layer", info: "Optimized layer feed for enhanced egg production and quality.", link: "/layer-feed" },
+                { img: breeder, name: "Broiler", info: "High-protein broiler feed for superior weight gain and efficiency.", link: "/broiler-feed" }
               ].map((product, index) => (
                 <div key={index} className=" col-md-4 mb-4">
                   <div className=" product-card text-center shadow p-4 position-relative"
@@ -305,7 +311,7 @@ const Home = () => {
             <div className="row">
               <div className="col-lg-5">
                 <div className="choose-us-style-two about-style-one">
-                  <img src="src/assets/images/rt1.jpg" alt="Thumb" />
+                  <img src={rt1} alt="Thumb" />
                   {/* <h3 class="title mt-30">Technology at Hariom Feeds</h3> */}
                   <div className="content">
                     {/* <ul class="list-grid">
@@ -336,7 +342,7 @@ const Home = () => {
                       nutritional content for our feed
                     </p>
                   </div>
-                  <img src="src/assets/images/rt2.jpg" alt="Thumb" />
+                  <img src={rt2} alt="Thumb" />
                 </div>
               </div>
             </div>

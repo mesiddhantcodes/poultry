@@ -1,10 +1,11 @@
-
+import chicks from "@/assets/images/chikcs.jpg"
+import Md from "@/assets/images/MDSIR.jpg"
 const Director = () => {
     return (
         <>
             <div
                 className="breadcrumb-area text-center shadow dark bg-fixed text-light"
-                style={{ backgroundImage: "url(src/assets/images/chikcs.jpg)" }}
+                style={{ backgroundImage: `url(${chicks})` }}
             >
                 <div className="container">
                     <div className="row">
@@ -30,18 +31,18 @@ const Director = () => {
                         <div className="row">
                             <div className="col-lg-5 left-info">
                                 <div className="thumb about-style-one image-frame">
-                                    <img src="src/assets/images/MDSIR.jpg" alt="Mr. Dilip Kumar Singh" />
+                                    <img src={Md} alt="Mr. Dilip Kumar Singh" />
                                 </div>
                             </div>
                             <div className="col-lg-7 right-info">
                                 <h2>Mr. Dilip Kumar Singh </h2>
                                 <span>Managing Director</span>
-                                <p className="global-paragraph "  align="justify">
+                                <p className="global-paragraph " align="justify">
                                     Welcome to Hariom Feeds Private Limited where quality, sustainability, and innovation are at the heart of everything we do.
                                     As a leading poultry manufacturer, we take pride in providing premium products that meet the highest standards of safety and excellence.
                                     Our commitment to integrity, sustainability, and customer satisfaction drives us to continually improve and exceed industry standards.
                                 </p>
-                                <p className="global-paragraph "  align="justify">
+                                <p className="global-paragraph " align="justify">
                                     We believe in the power of collaboration, both within our team and with our valued partners.
                                     By harnessing the latest technologies and adhering to ethical practices, we strive to offer products that are not only nutritious but also contribute positively to the communities we serve.
                                     Thank you for your continued trust in Hariom Feeds Private Limited. We are excited about the future and look forward to serving you with the
