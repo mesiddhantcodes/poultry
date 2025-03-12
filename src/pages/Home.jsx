@@ -198,7 +198,7 @@ const Home = () => {
               <div className="devider" />
             </div>
 
-            <p className="lead">
+            <p className="lead global2-paragraph">
               High-performance feeds for the best poultry and livestock growth.
             </p>
           </div>
@@ -240,39 +240,53 @@ const Home = () => {
                     </div>
 
                     {/* Product Title */}
-                    <h3 className="fw-bold lead "
+                    {/* <h3 className="fw-bold lead "
                       style={{
                         fontFamily: "var(--font-secondary)",
                         fontSize: "1.4rem"
                         // color: "var(--color-heading)",
                       }}>
                       {product.name}
-                    </h3>
+                    </h3> */}
 
                     {/* Product Description */}
 
                     {/* More Info Button with Link */}
-                    <div
-                      className="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+                    <Link
+                      to={product.link}
+                      className="btn btn-light global-paragraph"
                       style={{
-                        background: "rgba(0, 0, 0, 0.4)",
-                        opacity: 0,
-                        transition: "opacity 0.3s ease",
-                        borderRadius: "12px",
+                        background: "var(--color-primary)",
+                        color: "white",
+                        // fontSize: "1.2rem",
+                        borderRadius: "8px",
+                        padding: "10px 20px",
+                        border: "2px solid white",
+                        transition: "all 0.3s ease",
+                        textDecoration: "none",
+                        boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
                       }}
-                      onMouseEnter={(e) => e.currentTarget.style.opacity = 1}
-                      onMouseLeave={(e) => e.currentTarget.style.opacity = 0}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.background = "rgba(255, 255, 255, 0.9)";
+                        e.currentTarget.style.color = "black";
+                        e.currentTarget.style.border = "2px solid black";
+
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.background = "var(--color-primary)";
+                        e.currentTarget.style.color = "white";
+                        e.currentTarget.style.border = "2px solid white";
+
+                      }}
                     >
-                      <Link
-                        to={product.link}
-                        className="btn btn-light global-paragraph"
-                      >
-                        {product.name}
-                      </Link>
-                    </div>
+                      {product.name}
+                    </Link>
+
+
 
 
                   </div>
+
                 </div>
               ))}
             </div>
@@ -300,17 +314,19 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-lg-6 offset-lg-1 mt-80 mt-xs-0">
-                <div className="choose-us-style-two">
+                <div className="choose-us-style-two site-heading">
                   <h2 className="title mb-30 mt-xs-30">
                     Research &amp; Development at Hariom Feeds
-                  </h2>
+                  </h2>                            <div className="devider" />
+
+
                   <div className="fun-fact-style-one mb-50">
-                    <p>
+                    <p className="lead global-paragraph">
                       Research &amp; Development has been an integral part of
                       Hariom Feeds growth story. In every step of our journey,
                       we have innovated to overcome challenges.
                     </p>
-                    <p>
+                    <p className="lead global-paragraph">
                       At our state-of-the-art in-house nutrition lab, we
                       research and analyze feed reports to ascertain the right
                       nutritional content for our feed
@@ -328,8 +344,10 @@ const Home = () => {
 
 
         <section className="business-overview">
-          <div className="container">
+          <div className="container site-heading">
             <h2 className="title text-center mb-50">Business Overview of Our Company</h2>
+            <div className="devider" />
+
             <div className="row">
               {businessData.map((item, index) => (
                 <div className="col-xl-3 col-md-6 d-flex" key={index}>
