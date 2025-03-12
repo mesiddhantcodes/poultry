@@ -40,25 +40,25 @@ const Home = () => {
     ];
     const slides = [
       {
-        image: "/assets/images/slideHF2.jpg",
+        image: "src/assets/images/slideHF2.jpg",
         title: "Hariom Feeds Pvt. Ltd.",
         subtitle: "Perfect Feed",
         boldText: "Happy Farmer",
       },
       {
-        image: "/assets/images/slide2.jpg",
+        image: "src/assets/images/slide2.jpg",
         title: "Hariom Feeds Pvt. Ltd.",
         subtitle: "Uncompromising Quality",
         boldText: "Unmatched Results",
       },
       {
-        image: "/assets/images/slide3.jpg",
+        image: "src/assets/images/slide3.jpg",
         title: "Hariom Feeds Pvt. Ltd.",
         subtitle: "Progress with Purpose",
         boldText: "Passion in Action",
       },
       {
-        image: "/assets/images/SlideHF1.jpg",
+        image: "src/assets/images/SlideHF1.jpg",
         title: "Hariom Feeds Pvt. Ltd.",
         subtitle: "Passion For",
         boldText: "Sustainability",
@@ -108,7 +108,7 @@ const Home = () => {
         </div>
         <div
           className="about-style-one-area default-padding"
-          style={{ background: 'url("/assets/images/7583.jpg")' }}
+          style={{ background: 'url("src/assets/images/7583.jpg")' }}
         >
           <div className="container py-5">
             <div className="row justify-content-center">
@@ -118,9 +118,11 @@ const Home = () => {
                     <div className="col-lg-8 offset-lg-2 text-center">
                       <div className="site-heading">
 
-                        <h2 className="title fw-bold  mb-4">
+                        <h2 className="title fw-bold  ">
                           Hariom Feeds Private Limited
                         </h2>
+                        <div className="devider " />
+
                         <div className="divider mx-auto mb-4" />
                       </div>
                     </div>
@@ -208,23 +210,23 @@ const Home = () => {
           <div className="container mt-5">
             <div className="row justify-content-center">
               {[
-                { img: "/assets/images/feeder.png", name: "Breeder", info: "Specially formulated breeder feed for strong and healthy livestock.", link: "/breeder-feed" },
-                { img: "/assets/images/Layer2.png", name: "Layer", info: "Optimized layer feed for enhanced egg production and quality.", link: "/layer-feed" },
-                { img: "/assets/images/boiler.png", name: "Broiler", info: "High-protein broiler feed for superior weight gain and efficiency.", link: "/broiler-feed" }
+                { img: "src/assets/images/feeder.png", name: "Breeder", info: "Specially formulated breeder feed for strong and healthy livestock.", link: "/breeder-feed" },
+                { img: "src/assets/images/Layer2.png", name: "Layer", info: "Optimized layer feed for enhanced egg production and quality.", link: "/layer-feed" },
+                { img: "src/assets/images/boiler.png", name: "Broiler", info: "High-protein broiler feed for superior weight gain and efficiency.", link: "/broiler-feed" }
               ].map((product, index) => (
-                <div key={index} className="col-md-4 mb-4">
-                  <div className="product-card text-center shadow p-4 position-relative"
+                <div key={index} className=" col-md-4 mb-4">
+                  <div className=" product-card text-center shadow p-4 position-relative"
                     style={{
                       background: "var(--white)",
                       borderRadius: "8px",
                       boxShadow: "var(--box-shadow-primary)",
                       transition: "transform 0.3s ease-in-out"
                     }}
-                    onMouseEnter={(e) => e.currentTarget.style.transform = "translateY(-5px)"}
+                    onMouseEnter={(e) => e.currentTarget.style.transform = "translateY(-10px) scale(1.03)"}
                     onMouseLeave={(e) => e.currentTarget.style.transform = "translateY(0)"}
                   >
                     {/* Product Image */}
-                    <div className="product-image ">
+                    <div className="product-image  ">
                       <img
                         src={product.img}
                         alt={product.name}
@@ -300,8 +302,8 @@ const Home = () => {
           <div className="container">
             <div className="row">
               <div className="col-lg-5">
-                <div className="choose-us-style-two">
-                  <img src="/assets/images/rt1.jpg" alt="Thumb" />
+                <div className="choose-us-style-two about-style-one">
+                  <img src="src/assets/images/rt1.jpg" alt="Thumb" />
                   {/* <h3 class="title mt-30">Technology at Hariom Feeds</h3> */}
                   <div className="content">
                     {/* <ul class="list-grid">
@@ -314,13 +316,13 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-lg-6 offset-lg-1 mt-80 mt-xs-0">
-                <div className="choose-us-style-two site-heading">
+                <div className="choose-us-style-two site-heading about-style-one">
                   <h2 className="title mb-30 mt-xs-30">
                     Research &amp; Development at Hariom Feeds
                   </h2>                            <div className="devider" />
 
 
-                  <div className="fun-fact-style-one mb-50">
+                  <div className="fun-fact-style-one mb-50 ">
                     <p className="lead global-paragraph">
                       Research &amp; Development has been an integral part of
                       Hariom Feeds growth story. In every step of our journey,
@@ -332,7 +334,7 @@ const Home = () => {
                       nutritional content for our feed
                     </p>
                   </div>
-                  <img src="assets/images/rt2.jpg" alt="Thumb" />
+                  <img src="src/assets/images/rt2.jpg" alt="Thumb" />
                 </div>
               </div>
             </div>

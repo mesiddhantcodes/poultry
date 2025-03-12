@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
-
+import { faPhone, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Footer = () => {
   return (
     <footer className="bg-dark text-light" style={{ backgroundImage: "url()" }}>
-      <div className="container">
+      <div className="container global-paragraph">
         <div className="f-items default-padding">
           <div className="row">
             {/* Single Itme */}

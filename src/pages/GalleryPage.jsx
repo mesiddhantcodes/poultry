@@ -14,8 +14,10 @@ const GalleryPage = () => {
 
     return (
         <div className="gallery-page-container">
-            <div className="gallery-header text-center">
+            <div className="gallery-header text-center site-heading">
                 <h2>Our Product Gallery</h2>
+                <div className="devider" />
+
                 <p className="subtitle global2-paragraph">Explore our premium products</p>
             </div>
 

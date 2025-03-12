@@ -523,6 +523,8 @@ progress {
   font-weight: 300;
 }
 .lead22 {
+  font-family: "Montserrat", sans-serif; /* Modern and professional font */
+
   font-size: 0.95rem;
   font-weight: 900;
 }

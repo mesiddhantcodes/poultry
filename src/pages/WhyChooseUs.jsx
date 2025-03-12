@@ -6,12 +6,13 @@ const WhyChooseUs = () => {
             {/* Breadcrumb Section */}
             <div
                 className="breadcrumb-area text-center shadow dark bg-fixed text-light"
-                style={{ backgroundImage: "url(assets/images/chikcs.jpg)" }}
+                style={{ backgroundImage: "url(src/assets/images/chikcs.jpg)" }}
             >
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8 offset-lg-2">
                             <h1>Why Choose Us</h1>
+                            
                             <nav aria-label="breadcrumb">
                                 <ol className="breadcrumb">
                                     <li>
@@ -32,8 +33,10 @@ const WhyChooseUs = () => {
                 <div className="container">
                     <div className="row">
                         {/* Text Content */}
-                        <div className="col-xl-7 col-lg-6 about-style-one pr-50">
+                        <div className="col-xl-7 col-lg-6 about-style-one pr-50 site-heading">
                             <h2 className="heading">Why Choose Us </h2>
+                            <div className="devider" />
+
                             <p className="global-paragraph" align="justify">
                                 From the start, Hariom Feeds Pvt. Ltd. has established a range of values and commitments
                                 that are incorporated into its daily practices, which are showcased in the following aspects :
@@ -53,7 +56,7 @@ const WhyChooseUs = () => {
                         {/* Image Section */}
                         <div className="col-xl-5 col-lg-6 about-style-one pl-50 pr-md-15 pr-xs-15">
                             <img
-                                src="assets/images/why.jpeg"
+                                src="src/assets/images/why.jpeg"
                                 alt="Hariom Feeds"
                                 className="why-image"
                             />

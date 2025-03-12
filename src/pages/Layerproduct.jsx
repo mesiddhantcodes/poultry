@@ -16,8 +16,10 @@ const Layerproduct = () => {
     return (
         <div className="container mt-5">
             {/* Header Section */}
-            <div className="text-center">
+            <div className="text-center site-heading">
                 <h2 className="fw-bold mb-4 ">Layer Products</h2>
+                <div className="devider" />
+
                 <p className="lead text-secondary mx-auto global2-paragraph" style={{ maxWidth: "800px" }}>
                     One of the most important parts of raising chickens is feeding them a balanced diet.
                     For hens who are actively laying eggs, a crucial component is layer feed, rich in protein and calcium for

@@ -6,7 +6,7 @@ const Logo = () => {
   return (
     <>
       <div className="logo-wrapper">
-        <img src="/assets/images/logo1.png" className="logo" alt="Hariom Feeds Pvt. Ltd." />
+        <img src="src/assets/images/logo1.png" className="logo" alt="Hariom Feeds Pvt. Ltd." />
         <span className="registered-symbol">®</span>
       </div>
       <div className="logo-container">

@@ -6,7 +6,7 @@ const About = () => {
             <>
                 <div
                     className="breadcrumb-area text-center shadow dark bg-fixed text-light"
-                    style={{ backgroundImage: "url(/assets/images/chikcs.jpg)" }}
+                    style={{ backgroundImage: "url(src/assets/images/chikcs.jpg)" }}
                 >
                     <div className="container">
                         <div className="row">

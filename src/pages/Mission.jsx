@@ -7,7 +7,7 @@ const Mission = () => {
             {/* Breadcrumb Area */}
             <div
                 className="breadcrumb-area text-center shadow dark bg-fixed text-light"
-                style={{ backgroundImage: "url(assets/images/chikcs.jpg)" }}
+                style={{ backgroundImage: "url(src/assets/images/chikcs.jpg)" }}
             >
                 <div className="container">
                     <div className="row">
@@ -50,7 +50,7 @@ const Mission = () => {
 
                         <div className="col-xl-5 col-lg-6 about-style-one pl-50 pr-md-15 pr-xs-15">
                             <img
-                                src="assets/images/vision.jpg"
+                                src="src/assets/images/vision.jpg"
                                 alt="Hariom Feeds."
                                 className="styled-img"
                             />
@@ -59,7 +59,7 @@ const Mission = () => {
                         {/* Mission Section */}
                         <div className="col-xl-5 col-lg-6 about-style-one pr-50 pr-md-15 pr-xs-15 pt-50">
                             <img
-                                src="public/assets/images/mission.jpg"
+                                src="src/assets/images/mission.jpg"
                                 alt="Hariom Feeds"
                                 className="styled-img"
                             />

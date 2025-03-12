@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "./Logo";
 
+import { faPhone, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(null);
@@ -21,18 +23,20 @@ const Header = () => {
 
   return (
     <>
-      <div className="top-bar-area text-light">
+      <div className="top-bar-area text-light global-paragraph">
         <div className="container">
           <div className="row align-center">
             <div className="col-lg-9">
-              <div className="flex-item left lead22">
+              <div className="flex-item left ">
                 <p className="more101 lead22">Hariom Feeds Pvt. Ltd. </p>
-                <ul>
+                <ul className="lead22">
                   <li>
-                    <i className="fas fa-map-marker-alt" /> Gopalganj, Bihar
+                    <FontAwesomeIcon icon={faMapMarkerAlt} /> Gopalganj, Bihar
                   </li>
                   <li>
-                    <i className="fas fa-phone-alt" />
+                    <FontAwesomeIcon icon={faPhone} />
+
+
                     <a href="tel:+91 7781021426"> +91 7781021426</a>
                   </li>
                 </ul>
@@ -90,7 +94,7 @@ const Header = () => {
               <button type="button" className="navbar-toggle close-btn" onClick={toggleMenu}>
                 <i className="fas fa-times" />
               </button>
-              <ul className="nav navbar-nav navbar-right">
+              <ul className="nav navbar-nav navbar-right ">
                 <li><Link to="/" onClick={() => { toggleMenu(); setDropdownOpen(null); }}>Home</Link></li>
 
                 {/* About Us Dropdown */}
