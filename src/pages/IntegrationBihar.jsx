@@ -1,4 +1,3 @@
-// import React from "react";
 import ContactCard from "./component/ContactCard";
 
 const IntegrationBihar = () => {
@@ -14,11 +13,11 @@ const IntegrationBihar = () => {
     ];
 
     return (
-        <div className="container">
+        <div className="container global-paragraph">
             <div className="row">
                 {contactData.map((contact, index) => (
                     <div key={index} className="col-lg-4 col-md-6 col-sm-12 mb-4 mt-4">
-                        <ContactCard {...contact} />
+                        <ContactCard {...contact} delay={index * 0.2} /> {/* Stagger effect */}
                     </div>
                 ))}
             </div>

@@ -45,6 +45,7 @@ const ContactForm = () => {
                 <Typography
                     variant="h4"
                     align="center"
+                    className="site-heading"
                     sx={{ fontWeight: "bold", color: "primary.main", mb: 3 }}
                 >
                     <h2 className="text-2xl font-semibold text-[#0c2957] mb-3"
@@ -52,6 +53,8 @@ const ContactForm = () => {
                         Contact Us
 
                     </h2>
+                    <div className="devider " />
+
                 </Typography>
 
                 <Grid
