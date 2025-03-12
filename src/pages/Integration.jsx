@@ -1,8 +1,15 @@
 import { Outlet } from "react-router-dom";
 import StateCards from "./component/StateCards";
+import ContactCard from "./component/ContactCard";
 
 // StateCards
 const Integration = () => {
+    const contactData = [
+        { title: "BOKARO", address: "Jaina More, Bokaro-829301", phone: "+91-7781002152", email: "int.bkr@hariomfeeds.co.in" },
+        { title: "RAMGARH", address: "KOTHAR,Ramgarh-829122", phone: "+91-9264290426", email: "int.rmg@hariomfeeds.co.in" },
+        { title: "BARHI", address: "", phone: "+91-7781002157", email: "int.bar@hariomfeeds.co.in" },
+
+    ];
     return (
         <section className="w-full py-10 bg-gray-100">
             <div className="container mx-auto px-4">
@@ -46,7 +53,27 @@ const Integration = () => {
                 </div>
 
                 <StateCards />
+                <div className="d-flex justify-content-center about-style-one p-4">
+                    <div className="card shadow-lg rounded-lg text-center p-4" style={{ width: "350px", background: "#ffffff" }}>
+                        <img
+                            src="src/assets/images/MDSIR.jpg"
+                            alt="Integration Head"
+                            className="img-fluid rounded-circle mx-auto"
+                            style={{ width: "120px", height: "120px", objectFit: "cover", border: "4px solid #0c2957" }}
+                        />
+                        <h4 className="mt-1 text-[#0c2957]">John Doe</h4>
+                        <p className="text-muted">Integration Head</p>
+                        <p className="text-muted">
+                            <strong>Phone:</strong> +91-9876543210
+                        </p>
+                        <p className="text-muted">
+                            <strong>Email:</strong> integration@hariomfeeds.co.in
+                        </p>
+                    </div>
+                </div>
             </div>
+
+
             <Outlet />
 
         </section>

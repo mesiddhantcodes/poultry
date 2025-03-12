@@ -7,6 +7,7 @@ import { FaGlobe, FaTachometerAlt, FaDribbble, FaFile } from "react-icons/fa";
 // import "./public/assets/css/BuisnessOverview.css";
 import Gallery from "./component/Gallery";
 import "../assets/css/BusinessOverview.css";
+import { Link } from "react-router-dom";
 // import "./styles.css"; // Import your styles
 
 const Home = () => {
@@ -250,23 +251,27 @@ const Home = () => {
 
                     {/* Product Description */}
 
-
                     {/* More Info Button with Link */}
-                    <a href={product.link} className="btn btn-lg mt-3"
+                    <div
+                      className="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
                       style={{
-                        background: "var(--color-primary)",
-                        color: "var(--white)",
-                        border: "none",
-                        borderRadius: "6px",
-                        padding: "10px 20px",
-                        transition: "background 0.3s ease-in-out",
-                        boxShadow: "var(--box-shadow-secondary)",
-                        textDecoration: "none"
+                        background: "rgba(0, 0, 0, 0.4)",
+                        opacity: 0,
+                        transition: "opacity 0.3s ease",
+                        borderRadius: "12px",
                       }}
-                      onMouseEnter={(e) => e.currentTarget.style.background = "var(--color-secondary)"}
-                      onMouseLeave={(e) => e.currentTarget.style.background = "var(--color-primary)"}>
-                      More Info
-                    </a>
+                      onMouseEnter={(e) => e.currentTarget.style.opacity = 1}
+                      onMouseLeave={(e) => e.currentTarget.style.opacity = 0}
+                    >
+                      <Link
+                        to={product.link}
+                        className="btn btn-light global-paragraph"
+                      >
+                        {product.name}
+                      </Link>
+                    </div>
+
+
                   </div>
                 </div>
               ))}

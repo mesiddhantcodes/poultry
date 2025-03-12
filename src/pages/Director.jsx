@@ -30,7 +30,7 @@ const Director = () => {
                         <div className="row">
                             <div className="col-lg-5 left-info">
                                 <div className="thumb about-style-one image-frame">
-                                    <img src="public/assets/images/MDSIR.jpg" alt="Thumb" />
+                                    <img src="src/assets/images/MDSIR.jpg" alt="Mr. Dilip Kumar Singh" />
                                 </div>
                             </div>
                             <div className="col-lg-7 right-info">
