@@ -203,13 +203,12 @@ const Home = () => {
             </h5> */}
             <div className="site-heading text-center">
               {/* <h5 className="sub-title">Awesome Gallery</h5> */}
-              <h2 className="title">              Our Exclusive Products
-              </h2>
+              <h2 className="title"> Our Products</h2>
               <div className="" />
             </div>
 
             <p className="lead global2-paragraph">
-              High-performance feeds for the best poultry and livestock growth.
+              
             </p>
           </div>
 

@@ -22,9 +22,7 @@ const Footer = () => {
                 </div>
 
                 <p align="">
-                  Hariom Feeds Pvt.Ltd. is a feed manufacturing company
-                  producing compounded poultry feed, catering to the animal
-                  health and nutrition industry
+                  
                 </p>
               </div>
             </div>
@@ -80,7 +78,7 @@ const Footer = () => {
                     </div>
                     <div className="content">
                       <strong>Corporate office :</strong>
-                      405, Shashi Complex, Exibition Road, Patna-800001 (BIHAR)
+                      405,ShashiComplex,ExibitionRoad,  Patna-800001(BIHAR)
                     </div>
                   </li>
                   <li>
@@ -100,8 +98,8 @@ const Footer = () => {
                     </div>
                     <div className="content">
                       <strong>Phone :</strong>
-                      <a href="tel:+91 9264496800">+917544000912</a>,
-                      <a href="tel:+91 7544000903">+917544000903</a>
+                      <a href="tel:+91 9264496800">+919264496800</a>,
+                      <a href="tel:+91 7781000594">+917781000594</a>
                     </div>
                   </li>
                 </ul>
@@ -111,7 +109,7 @@ const Footer = () => {
           </div>
         </div>
         {/* Start Footer Bottom */}
-        <div className="footer-bottom">
+        <div className="footer-bottom" style={{ textAlign: "center", padding: "10px 0" }}>
           <div className="row">
             <div className="col-lg-12">
               <p>

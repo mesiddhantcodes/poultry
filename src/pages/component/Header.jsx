@@ -37,11 +37,11 @@ const Header = () => {
                     <FontAwesomeIcon icon={faPhone} />
 
 
-                    <a href="tel:+91 7781021426"> +91 7781021426</a>
+                    <a href="tel:+91 9264496800"> +91-9264496800</a>
                   </li>
                 </ul>
                 <div className="content">
-                  <strong>Email:</strong>
+                  <strong>E-mail: </strong>
                   <a href="mailto:contact@hariomfeeds.co.in">
                     contact@hariomfeeds.co.in
                   </a>

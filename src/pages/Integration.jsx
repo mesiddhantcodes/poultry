@@ -61,10 +61,10 @@ const Integration = () => {
                             className="img-fluid rounded-circle mx-auto"
                             style={{ width: "120px", height: "120px", objectFit: "cover", border: "4px solid #0c2957" }}
                         />
-                        <h4 className="mt-1 text-[#0c2957]">John Doe</h4>
+                        <h4 className="mt-1 text-[#0c2957]">Gyan Ranjan Linka </h4>
                         <p className="text-muted">Integration Head</p>
                         <p className="text-muted">
-                            <strong>Phone:</strong> +91-9876543210
+                            <strong>Phone:</strong> +91-7781021445
                         </p>
                         <p className="text-muted">
                             <strong>Email:</strong> integration@hariomfeeds.co.in
