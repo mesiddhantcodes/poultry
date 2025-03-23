@@ -16,7 +16,7 @@ const GalleryPage = () => {
         <div className="gallery-page-container">
             <div className="gallery-header text-center site-heading">
                 <h2>Our Product Gallery</h2>
-                <div className="devider" />
+                <div className="" />
 
                 <p className="subtitle global2-paragraph">Explore our premium products</p>
             </div>

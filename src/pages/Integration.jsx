@@ -19,7 +19,7 @@ const Integration = () => {
                         <h2 className="text-2xl font-semibold text-[#0c2957] mb-3">
                             Integration Division
                         </h2>
-                        <div className="devider " />
+                        <div className=" " />
 
                         <p className="global-paragraph" align="justify">
                             This Division plays a crucial role in supporting the poultry industry by catering to the needs of 7,000 poultry farmers, ranging from small-scale backyard poultry keepers to large commercial enterprises. These farmers
@@ -44,7 +44,7 @@ const Integration = () => {
                 {/* Our Branches Section */}
                 <div className="sec-title text-center site-heading">
                     <h2>Our Branches</h2>
-                    <div className="devider " />
+                    <div className="" />
 
                     <div className="text-decoration">
                         <span className="left"></span>

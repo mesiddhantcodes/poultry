@@ -36,7 +36,7 @@ const Mission = () => {
 
                         <div className="col-xl-7 col-lg-6 about-style-one pr-50 site-heading">
                             <h2 className="heading">Our Vision</h2>
-                            <div className="devider " />
+                            <div className="" />
 
                             <p className="global-paragraph" align="justify">
                                 At Hariom feeds Private Limited, we are committed to producing premium poultry feed that meets
@@ -67,7 +67,7 @@ const Mission = () => {
 
                         <div className="col-xl-7 col-lg-6 about-style-one site-heading  pl-50 pt-50">
                             <h2 className="heading">Our Mission</h2>
-                            <div className="devider " />
+                            <div className="" />
 
                             <p className="global-paragraph" align="justify">
                                 At Hariom Feeds Private Limited, Our mission is to

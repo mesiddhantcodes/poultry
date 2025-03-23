@@ -53,7 +53,7 @@ const ContactForm = () => {
                         Contact Us
 
                     </h2>
-                    <div className="devider " />
+                    <div className="" />
 
                 </Typography>
 

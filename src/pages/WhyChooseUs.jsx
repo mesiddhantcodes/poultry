@@ -35,7 +35,7 @@ const WhyChooseUs = () => {
                         {/* Text Content */}
                         <div className="col-xl-7 col-lg-6 about-style-one pr-50 site-heading">
                             <h2 className="heading">Why Choose Us </h2>
-                            <div className="devider" />
+                            <div className="" />
 
                             <p className="global-paragraph" align="justify">
                                 From the start, Hariom Feeds Pvt. Ltd. has established a range of values and commitments

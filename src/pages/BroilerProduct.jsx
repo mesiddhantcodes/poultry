@@ -37,7 +37,7 @@ const BroilerProduct = () => {
             {/* Header Section */}
             <div className="text-center site-heading">
                 <h2 className="fw-bold mb-4 ">Broiler Products</h2>
-                <div className="devider" />
+                <div className="" />
 
                 <p className="lead text-secondary mx-auto" style={{ maxWidth: "800px" }}>
                     Explore our premium range of layer feeds designed for optimal poultry growth.

@@ -11,7 +11,7 @@ const Poultry = () => {
             <h2 className="text-2xl font-semibold text-[#0c2957] mb-3">
               Farms-Overview
             </h2>
-            <div className="devider " />
+            <div className=" " />
 
             <p className=" global-paragraph " align="justify">
               Hariom Feeds is a trusted name in meeting your nutritional and protein needs. With over 23 years of excellence,
@@ -43,7 +43,7 @@ const Poultry = () => {
           </div>
         </div> <div className="sec-title text-center site-heading ">
           <h2>Our Verticals</h2>
-          <div className="devider " />
+          <div className=" " />
 
           <div className="text-decoration ">
             <span className="left "></span>

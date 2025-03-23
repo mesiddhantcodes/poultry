@@ -14,7 +14,7 @@ const Gallery = () => {
                     <div className="col-lg-8 offset-lg-2">
                         <div className="site-heading text-center">
                             <h2 className="title">Gallery Of Our Products</h2>
-                            <div className="devider" />
+                            <div className="" />
                         </div>
                     </div>
                 </div>

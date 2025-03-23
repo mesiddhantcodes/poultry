@@ -18,7 +18,7 @@ const Layerproduct = () => {
             {/* Header Section */}
             <div className="text-center site-heading">
                 <h2 className="fw-bold mb-4 ">Layer Products</h2>
-                <div className="devider" />
+                <div className="" />
 
                 <p className="lead text-secondary mx-auto global2-paragraph" style={{ maxWidth: "800px" }}>
                     One of the most important parts of raising chickens is feeding them a balanced diet.

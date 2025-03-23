@@ -129,7 +129,7 @@ const Home = () => {
                         <h2 className="title fw-bold  ">
                           Hariom Feeds Private Limited
                         </h2>
-                        <div className="devider " />
+                        <div className=" " />
 
                         <div className="divider mx-auto mb-4" />
                       </div>
@@ -205,7 +205,7 @@ const Home = () => {
               {/* <h5 className="sub-title">Awesome Gallery</h5> */}
               <h2 className="title">              Our Exclusive Products
               </h2>
-              <div className="devider" />
+              <div className="" />
             </div>
 
             <p className="lead global2-paragraph">
@@ -327,7 +327,7 @@ const Home = () => {
                 <div className="choose-us-style-two site-heading about-style-one">
                   <h2 className="title mb-30 mt-xs-30">
                     Research &amp; Development at Hariom Feeds
-                  </h2>                            <div className="devider" />
+                  </h2>                            <div className="" />
 
 
                   <div className="fun-fact-style-one mb-50 ">
@@ -356,7 +356,7 @@ const Home = () => {
         <section className="business-overview">
           <div className="container site-heading">
             <h2 className="title text-center mb-50">Business Overview of Our Company</h2>
-            <div className="devider" />
+            <div className="" />
 
             <div className="row">
               {businessData.map((item, index) => (

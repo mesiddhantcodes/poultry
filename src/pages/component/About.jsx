@@ -34,7 +34,7 @@ const About = () => {
                         <div className="row">
                             <div className="col-xl-7 col-lg-6 about-style-one site-heading text-center ">
                                 <h2 className="heading">Hariom Feeds Pvt. Ltd.</h2>
-                                <div className="devider " />
+                                <div className=" " />
 
 
                                 <p className="global-paragraph " align="justify">
